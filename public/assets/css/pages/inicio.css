@@ -1,0 +1,229 @@
+/* ============================
+   HERO / CAROUSEL
+============================ */
+
+.hero {
+    width: 100%;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+/* Slides */
+.carousel-track {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity .6s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ============================
+   INDICATORS (líneas)
+============================ */
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    right: 24px;
+    display: flex;
+    gap: 8px;
+    z-index: 5;
+}
+
+.indicator {
+    width: 26px;
+    height: 3px;
+    background: rgba(255,255,255,.45);
+    border: none;
+    cursor: pointer;
+    transition: background .3s ease, width .3s ease;
+}
+
+.indicator.active {
+    background: #fff;
+    width: 40px;
+}
+/* ============================
+   HERO - Desktop image anchor
+============================ */
+
+@media (min-width: 769px) {
+    .slide img {
+        object-position: center top;
+    }
+}
+
+/* ============================
+   INFO SECTION
+============================ */
+
+.info-section {
+   
+    margin: 80px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* ============================
+   Section subtitle highlight
+============================ */
+
+.info-title {
+    width: 100%;
+    background: #c40000;
+    color: #fff;
+
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 26px 0;
+    margin-bottom: 24px;
+}
+
+
+.info-text {
+    max-width: 720px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+
+/* ============================
+   CAROUSEL
+============================ */.info-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+/* Slots fijos */
+.card-slot {
+    width: 280px;
+    height: auto;
+    transition: transform .5s ease;
+}
+
+/* Centro con flechas */
+.center-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Tarjeta base */
+.info-card {
+    border: 2px solid #c40000;
+    border-radius: 16px;
+    padding: 16px;
+    background: #fff;
+    transition: transform .5s ease, background .5s ease;
+    transition:
+        opacity .45s ease,
+        transform .45s ease;
+}
+
+.info-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+/* Estados visuales */
+.is-left .info-card,
+.is-right .info-card {
+    transform: scale(0.92);
+    opacity: 0.85;
+}
+
+.is-center .info-card {
+    background: #8a8a8a;
+    transform: scale(1.05);
+}
+
+/* Flechas alineadas al centro */
+.info-arrow {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ============================
+   Card transition (individual)
+============================ */
+
+/* Estados de salida */
+.card-exit-left {
+    opacity: 0;
+    transform: translateX(-12px) scale(0.96);
+}
+
+.card-exit-right {
+    opacity: 0;
+    transform: translateX(12px) scale(0.96);
+}
+
+/* Estado de entrada */
+.card-enter {
+    opacity: 0;
+    transform: scale(0.96);
+}
+/* ============================
+   Info carousel - Mobile
+============================ */
+
+@media (max-width: 768px) {
+
+    /* Ocultar tarjetas laterales */
+    .card-slot.left,
+    .card-slot.right {
+        display: none;
+    }
+
+    /* Centrar tarjeta central y flechas */
+    .info-carousel {
+        justify-content: center;
+    }
+
+    .center-wrapper {
+        gap: 10px;
+    }
+
+    /* Tarjeta central ocupa más ancho */
+    .card-slot.center {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* Ajuste visual */
+    .is-center .info-card {
+        transform: scale(1);
+    }
+}
