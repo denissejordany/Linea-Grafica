@@ -45,7 +45,7 @@
         finalidad de seguir mejorando su servicio.
    </p>
 
-   <div class="info-carousel">
+   <div class="info-carousel" id="carousel-info">
 
         <div class="card-slot left"></div>
 
@@ -59,5 +59,54 @@
 
         <div class="card-slot right"></div>
    </div>
+<div class="cotizar-wrapper">
+    <a href="#cotizar" class="btn-cotizar">Cotizar ahora</a>
+</div>
+
+   <!--- MEJORES PROYECTOS ------------------>
+
+   <h2 class="info-title">
+        <span>MEJORES PROYECTOS</span>
+   </h2>
+ <div class="info-carousel" id="carousel-services">
+
+        <div class="card-slot left"></div>
+
+        <div class="center-wrapper">
+            <button class="info-arrow left" id="infoPrev">&#10094;</button>
+
+            <div class="card-slot center"></div>
+
+            <button class="info-arrow right" id="infoNext">&#10095;</button>
+        </div>
+
+        <div class="card-slot right"></div>
+   </div>
+   <div class="cotizar-wrapper">
+    <a href="#cotizar" class="btn-cotizar">Cotizar ahora</a>
+</div>
+
+<!----------NUESTROS CLIENTES-------->
+
+ <h2 class="info-title">
+        <span>NUESTROS CLIENTES</span>
+   </h2>
+   <section class="clientes">
+    
+
+    <div class="clientes-grid">
+        <img src="<?php echo Routes::img('inicio/cliente1.png'); ?>" alt="Arca Continental">
+        <img src="<?php echo Routes::img('inicio/cliente2.png'); ?>" alt="Rokys">
+        <img src="<?php echo Routes::img('inicio/cliente3.png'); ?>" alt="Trilce">
+        <img src="<?php echo Routes::img('inicio/cliente4.png'); ?>" alt="Pardos Chicken">
+        <img src="<?php echo Routes::img('inicio/cliente5.png'); ?>" alt="Fuxion">
+        <img src="<?php echo Routes::img('inicio/cliente6.png'); ?>" alt="Celima">
+        <img src="<?php echo Routes::img('inicio/cliente7.png'); ?>" alt="Trebol">
+        <img src="<?php echo Routes::img('inicio/cliente8.png'); ?>" alt="AAP">
+        <img src="<?php echo Routes::img('inicio/cliente9.png'); ?>" alt="Clinica Loayza">
+        <img src="<?php echo Routes::img('inicio/cliente10.png'); ?>" alt="Financiera Confianza">
+        <img src="<?php echo Routes::img('inicio/cliente11.png'); ?>" alt="Layconsa">
+    </div>
+</section>
 
 </section>
