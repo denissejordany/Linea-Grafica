@@ -10,8 +10,8 @@ class PoliticasController{
             'global/footer.css'
         ];
 
-        require_once "app/views/layouts/header.php";
+        require_once "app/views/layouts/header_politicas.php";
         require_once "app/views/politicas.php";
-        require_once "app/views/layouts/footer.php";
+        require_once "app/views/layouts/footer_politicas.php";
     }
 }
