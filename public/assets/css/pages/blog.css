@@ -1,0 +1,39 @@
+.info-title {
+    width: 100%;
+    background: #BE1119;
+    color: #fff;
+
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 26px 0;
+    margin-bottom: 24px;
+}
+
+.cotizar-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.btn-cotizar {
+    background-color: #000;
+    color: #fff;
+    padding: 14px 36px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.btn-cotizar:hover {
+    background-color: #222;
+    transform: translateY(-2px);
+}
+
+.btn-cotizar:active {
+    transform: translateY(0);
+}
