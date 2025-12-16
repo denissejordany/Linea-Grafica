@@ -74,5 +74,6 @@
 
 <script src="<?php echo Routes::js('main.js'); ?>"></script>
 <script src="<?php echo Routes::js('inicio.js'); ?>"></script>
+<script src="<?php echo Routes::js('blog.js'); ?>"></script>
 </body>
 </html>
