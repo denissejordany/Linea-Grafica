@@ -1,3 +1,5 @@
+
+
 /* ============================
    HERO / CAROUSEL
 ============================ */
@@ -90,7 +92,7 @@
 
 .info-title {
     width: 100%;
-    background: #c40000;
+    background: #BE1119;
     color: #fff;
 
     font-size: 32px;
@@ -224,5 +226,82 @@
     /* Ajuste visual */
     .is-center .info-card {
         transform: scale(1);
+    }
+}
+/*------Boton cotizar ahora -----*/
+.cotizar-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.btn-cotizar {
+    background-color: #000;
+    color: #fff;
+    padding: 14px 36px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.btn-cotizar:hover {
+    background-color: #222;
+    transform: translateY(-2px);
+}
+
+.btn-cotizar:active {
+    transform: translateY(0);
+}
+
+/*------------MEJORES CLIENTES IMAGENES---------------*/
+.clientes {
+    width: 100%;
+    padding: 60px 20px;
+}
+
+.clientes-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.clientes-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+    align-items: center;
+    justify-items: center;
+}
+
+.clientes-grid img {
+    max-width: 160px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(0);
+}
+@media (max-width: 768px) {
+
+    .clientes {
+        padding: 40px 16px;
+    }
+
+    .clientes-title {
+        font-size: 22px;
+        margin-bottom: 28px;
+    }
+
+    .clientes-grid {
+        gap: 28px 20px;
+    }
+
+    .clientes-grid img {
+        max-width: 110px;
     }
 }

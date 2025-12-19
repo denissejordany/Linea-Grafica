@@ -1,0 +1,12 @@
+.info-title {
+    width: 100%;
+    background: #BE1119;
+    color: #fff;
+
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 26px 0;
+    margin-bottom: 24px;
+}

@@ -22,17 +22,17 @@
 
         <div class="logo">
             <a href="<?php echo Routes::url('inicio'); ?>">
-                <img src="<?php echo Routes::img('logo.png'); ?>" alt="Logo">
+                <img src="<?php echo Routes::img('header/logo.png'); ?>" alt="Logo">
             </a>
         </div>
 
-        <!-- Botón de menú -->
+        <!-- cmoentario-->
         <button class="menu-btn" id="menuBtn">
             <img 
                 id="menu-icon"
-                src="<?php echo Routes::img('menu_icon.png'); ?>"
-                data-close="<?php echo Routes::img('close_icon.png'); ?>"
-                data-open="<?php echo Routes::img('menu_icon.png'); ?>"
+                src="<?php echo Routes::img('header/menu_icon.png'); ?>"
+                data-close="<?php echo Routes::img('header/close_icon.png'); ?>"
+                data-open="<?php echo Routes::img('header/menu_icon.png'); ?>"
                 alt="menu">
         </button>
 

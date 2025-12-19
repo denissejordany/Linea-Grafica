@@ -1,6 +1,4 @@
 
-
-
 :root{
     --nav-font-size: 22px;
     --nav-letter-spacing: 0.02em;
@@ -51,10 +49,10 @@
     padding: var(--nav-padding-y) var(--nav-padding-x);
     border-radius: 999px;
 
-    /* Borde invisible pero presente → NO TEMBLE */
+    
     border: 2px solid transparent;
 
-    /* Animación MUY suave */
+    /* cambioooo */
     transition: background .25s ease, 
                 border-color .25s ease,
                 box-shadow .28s ease;
@@ -168,7 +166,7 @@ padding: 10px 16px;
         transform: translateY(-50%);
         width: 15px;
         height: 14px;
-        background: url("/WEBLINEA/public/assets/img/drop.png") no-repeat center;
+        background: url("/WEBLINEA/public/assets/img/header/drop.png") no-repeat center;
         background-size: contain;
         opacity: 0.5;
         transition: opacity .25s ease, transform .25s ease;
@@ -176,7 +174,7 @@ padding: 10px 16px;
 
     /* Estado activo → icono distinto */
     .nav-item.active::before {
-        background-image: url("/WEBLINEA/public/assets/img/drop_active.png");
+        background-image: url("/WEBLINEA/public/assets/img/header/drop_active.png");
         opacity: 1;
         transform: translateY(-50%) scale(1.15);
     }
