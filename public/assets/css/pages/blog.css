@@ -263,12 +263,240 @@
     right: 20px;
 }
 @media (max-width: 768px) {
-    .alt-slide {
-        padding: 20px;
+    .alt-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .alt-prev { left: 10px; }
+    .alt-next { right: 10px; }
+}
+/* ===== PROYECTOS CARRUSEL ===== */
+.projects-carousel {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.projects-carousel-inner {
+    position: relative;
+    width: 100%;
+}
+
+.projects-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Slide */
+.projects-slide {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: clamp(20px, 6vw, 90px);
+    box-sizing: border-box;
+}
+
+/* Imagen izquierda */
+.projects-image img {
+    width: 100%;
+    max-width: 520px;      /* límite visual en desktop */
+    max-height: 380px;     /* evita imágenes muy altas */
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+
+
+.projects-image img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+/* Texto derecha */
+.projects-content {
+    flex: 0 0 45%;
+}
+
+.projects-subtitle {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.projects-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.projects-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.projects-prev {
+    left: 20px;
+}
+
+.projects-next {
+    right: 20px;
+}
+@media (max-width: 768px) {
+
+    .projects-slide {
+        flex-direction: column;
+        text-align: center;
         gap: 20px;
     }
 
-    .alt-text {
+       .projects-image img {
+        max-width: 100%;
+        max-height: 260px;
+    }
+    .projects-content {
+        flex: 0 0 100%;
+    }
+
+    .projects-subtitle {
+        font-size: 18px;
+    }
+
+    .projects-text {
         font-size: 14px;
     }
+
+    .projects-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .projects-prev { left: 10px; }
+    .projects-next { right: 10px; }
+}
+@media (min-width: 1600px) {
+    .projects-image img {
+        max-width: 580px;
+        max-height: 420px;
+    }
+}
+
+
+/* ===== FAQ HIGHLIGHT ===== */
+.faq-highlight {
+    width: 100%;
+    background: #3a3a3a; /* gris similar al de la imagen */
+    padding: clamp(30px, 5vw, 60px) 20px;
+     
+}
+
+.faq-highlight-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.faq-highlight-image {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.faq-highlight-image img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+.faq-highlight-content {
+    flex: 0 0 60%;
+    color: #fff;
+}
+
+.faq-highlight-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.faq-highlight-text {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #e0e0e0;
+}
+.faq-highlight-btn-text {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.faq-highlight-btn-text:hover {
+    opacity: 0.85;
+    transform: translateX(4px);
+}
+.faq-highlight-icon {
+    width: 14px;          /* pequeño y elegante */
+    height: auto;
+    display: block;
+    filter: brightness(0) invert(1); /* mismo tono blanco */
+}
+
+
+@media (max-width: 768px) {
+
+    .faq-highlight-btn-text {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .faq-highlight-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .faq-highlight-image,
+    .faq-highlight-content {
+        flex: 0 0 100%;
+    }
+
+    .faq-highlight-image img {
+        max-width: 260px;
+    }
+
+    .faq-highlight-title {
+        font-size: 18px;
+    }
+
+    .faq-highlight-text {
+        font-size: 14px;
+    }
+
+    
 }
