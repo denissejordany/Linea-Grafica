@@ -11,7 +11,7 @@
                 <li>
                     <a href="<?php echo Routes::url('acerca'); ?>">
                         <span class="icon">
-                            <img src="<?php echo Routes::img('icons/info.svg'); ?>" alt="">
+                            <img src="" alt="">
                         </span>
                         Acerca de nosotros
                     </a>
@@ -20,7 +20,7 @@
                 <li>
                     <a href="<?php echo Routes::url('politicas'); ?>">
                         <span class="icon">
-                            <img src="<?php echo Routes::img('icons/policy.svg'); ?>" alt="">
+                            <img src="" alt="">
                         </span>
                         Nuestras políticas
                     </a>
@@ -29,7 +29,7 @@
                 <li>
                     <a href="<?php echo Routes::url('faq'); ?>">
                         <span class="icon">
-                            <img src="<?php echo Routes::img('icons/faq.svg'); ?>" alt="">
+                            <img src="" alt="">
                         </span>
                         Preguntas frecuentes
                     </a>
@@ -48,7 +48,7 @@
             <ul class="footer-contact">
                 <li>
                     <span class="icon">
-                        <img src="<?php echo Routes::img('icons/location.svg'); ?>" alt="">
+                        <img src="" alt="">
                     </span>
                     Av. Bolivia 729<br>
                     Breña, Lima – Perú
@@ -56,14 +56,14 @@
 
                 <li>
                     <span class="icon">
-                        <img src="<?php echo Routes::img('icons/phone.svg'); ?>" alt="">
+                        <img src="" alt="">
                     </span>
                     +51 940 909 749
                 </li>
 
                 <li>
                     <span class="icon">
-                        <img src="<?php echo Routes::img('icons/mail.svg'); ?>" alt="">
+                        <img src="" alt="">
                     </span>
                     ventas@lineagraficaxxi.com
                 </li>
@@ -75,5 +75,6 @@
 
 <script src="<?php echo Routes::js('main.js'); ?>"></script>
 <script src="<?php echo Routes::js('inicio.js'); ?>"></script>
+<script src="<?php echo Routes::js('serviciosTienda.js'); ?>"></script>
 </body>
 </html>

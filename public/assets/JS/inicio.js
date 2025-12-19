@@ -29,15 +29,15 @@ indicators.forEach(indicator => {
 
 const data = [
     {
-        img: "/WEBLINEA/public/assets/img/inicio/info1.png",
+        img: "/linea_grafica/public/assets/img/inicio/info1.png",
         text: "Contamos con maquinas repotenciadas solo para ti."
     },
     {
-        img: "/WEBLINEA/public/assets/img/inicio/info2.png",
+        img: "/linea_grafica/public/assets/img/inicio/info2.png",
         text: "Servicio de calidad, trabajamos con los mejores diseñadores y maquinas "
     },
     {
-        img: "/WEBLINEA/public/assets/img/inicio/info3.png",
+        img: "/linea_grafica/public/assets/img/inicio/info3.png",
         text: "Mejores proyectos, solo con nosotros."
     }
 ];

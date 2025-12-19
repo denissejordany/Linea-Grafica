@@ -1,0 +1,199 @@
+/* ============================
+   INFO SECTION
+============================ */
+
+.info-section {
+   
+    margin: 0; 
+    text-align: center;
+}
+
+/* ============================
+   Section subtitle highlight
+============================ */
+
+.info-title {
+    width: 100%;
+    background: #c40000;
+    color: #fff;
+
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 26px 0;
+    margin-bottom: 24px;
+}
+
+/* ============================
+   INFO BOX
+============================ */
+
+.info-box {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    border: 2px solid #c40000;
+    border-radius: 20px;
+    background: #fff;
+}
+
+/* Imagen */
+.info-image {
+    flex: 1;
+}
+
+.info-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+/* Texto */
+.info-text {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ============================
+   CARDS CONTAINER
+============================ */
+
+.cards-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+    display: flex;
+    gap: 24px;
+}
+
+/* ============================
+   CARD
+============================ */
+
+.info-card {
+    flex: 1;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    border: 2px solid #c40000;
+    border-radius: 30px;
+    background: #fff;
+}
+
+/* Header solo para posicionar */
+.card-header {
+    align-self: flex-start;
+    margin-left: -24px; /* 👈 CLAVE */
+}
+
+.card-body {
+    flex: 1; /* 👈 ocupa toda la altura disponible */
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título */
+.card-title {
+    background: #c40000;
+    color: #fff;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    padding: 10px 18px;
+    border-radius: 0 8px 8px 0;
+
+    margin-bottom: 18px;
+}
+
+
+/* Imagen */
+.card-image img {
+    width: 100%;
+    max-width: 220px;
+    margin-bottom: 16px;
+}
+
+/* Lista */
+.card-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.card-list li {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.card-btn {
+    margin-top: auto;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+
+    padding: 10px 0;
+}
+
+/* Icono */
+.btn-icon {
+    width: 26px;
+    height: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #c40000;
+    color: #fff;
+
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Hover sutil */
+.card-btn:hover {
+    text-decoration: underline;
+}
+
+
+/* ============================
+   RESPONSIVE
+============================ */
+
+@media (max-width: 768px) {
+    .info-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+    }
+}
