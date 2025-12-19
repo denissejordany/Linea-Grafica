@@ -1,0 +1,156 @@
+/* ============================
+   SERVICE FEATURE
+============================ */
+
+.service-feature {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 32px;
+
+    border: 2px solid #c40000;
+    border-radius: 30px;
+    background: #fff;
+}
+
+/* ============================
+   HEADER
+============================ */
+
+.service-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-left: -32px;
+}
+
+.service-title {
+    background: #c40000;
+    color: #fff;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    padding: 12px 22px;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Botón volver */
+.service-back {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+    background: #c40000;
+    color: #fff;
+
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============================
+   CONTENT
+============================ */
+
+.service-content {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+
+    margin-bottom: 32px;
+}
+
+.service-item {
+    flex: 1;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    max-width: 220px;
+    margin-bottom: 16px;
+}
+
+.service-item ul {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.service-item li {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+/* ============================
+   ACTION
+============================ */
+
+.service-action {
+    text-align: center;
+}
+
+.service-btn {
+    display: inline-block;
+    padding: 14px 36px;
+
+    background: #c40000;
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 30px;
+
+    transition: background 0.3s ease;
+}
+
+.service-btn:hover {
+    background: #9f0000;
+}
+
+/* ============================
+   ANIMACION
+============================ */
+
+.service-feature {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.4s ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+
+@media (max-width: 768px) {
+    .service-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .service-header {
+        flex-direction: row;
+    }
+}
