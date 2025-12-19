@@ -11,7 +11,7 @@
                 <li>
                     <a href="<?php echo Routes::url('acerca'); ?>">
                         <span class="icon">
-                            <img src="<?php echo Routes::img('icons/info.svg'); ?>" alt="">
+                            <img src="<?php echo Routes::img('footer/acerca.png'); ?>" alt="">
                         </span>
                         Acerca de nosotros
                     </a>
@@ -20,16 +20,16 @@
                 <li>
                     <a href="<?php echo Routes::url('politicas'); ?>">
                         <span class="icon">
-                            <img src="<?php echo Routes::img('icons/policy.svg'); ?>" alt="">
+                            <img src="<?php echo Routes::img('footer/politicas.png'); ?>" alt="">
                         </span>
                         Nuestras políticas
                     </a>
                 </li>
 
                 <li>
-                    <a href="<?php echo Routes::url('faq'); ?>">
+                    <a href="<?php echo Routes::url('preguntas'); ?>">
                         <span class="icon">
-                            <img src="<?php echo Routes::img('icons/faq.svg'); ?>" alt="">
+                            <img src="<?php echo Routes::img('footer/preguntas.png'); ?>" alt="">
                         </span>
                         Preguntas frecuentes
                     </a>
@@ -37,7 +37,8 @@
             </ul>
 
             <p class="footer-copy">
-                ©2025 Línea Gráfica. Todos los derechos reservados
+                ©2025 Línea Gráfica. <br>
+                Todos los derechos reservados
             </p>
         </div>
 
@@ -48,32 +49,31 @@
             <ul class="footer-contact">
                 <li>
                     <span class="icon">
-                        <img src="<?php echo Routes::img('icons/location.svg'); ?>" alt="">
+                        <img src="<?php echo Routes::img('footer/ubicacion.png'); ?>" alt="">
                     </span>
-                    Av. Bolivia 729<br>
-                    Breña, Lima – Perú
+                    Av. Bolivia 729 Breña, Lima – Perú
                 </li>
 
                 <li>
                     <span class="icon">
-                        <img src="<?php echo Routes::img('icons/phone.svg'); ?>" alt="">
+                        <img src="<?php echo Routes::img('footer/telefono.png'); ?>" alt="">
                     </span>
                     +51 940 909 749
                 </li>
 
                 <li>
                     <span class="icon">
-                        <img src="<?php echo Routes::img('icons/mail.svg'); ?>" alt="">
+                        <img src="<?php echo Routes::img('footer/correo.png'); ?>" alt="">
                     </span>
                     ventas@lineagraficaxxi.com
                 </li>
             </ul>
         </div>
-
     </div>
 </footer>
 
 <script src="<?php echo Routes::js('main.js'); ?>"></script>
 <script src="<?php echo Routes::js('inicio.js'); ?>"></script>
+<script src="<?php echo Routes::js('blog.js'); ?>"></script>
 </body>
 </html>

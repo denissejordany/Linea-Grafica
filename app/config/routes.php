@@ -20,6 +20,9 @@ class Routes {
     public static function img($file = '') {
         return self::$base . "public/assets/img/" . $file;
     }
+     public static function pdf($file = '') {
+        return self::$base . "public/assets/pdf/" . $file;
+    }
 
     public static function asset($path = '') {
         return self::$base . "public/assets/" . $path;

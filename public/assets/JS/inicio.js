@@ -27,111 +27,108 @@ indicators.forEach(indicator => {
     });
 });
 
-const data = [
-    {
-        img: "/WEBLINEA/public/assets/img/inicio/info1.png",
-        text: "Contamos con maquinas repotenciadas solo para ti."
-    },
-    {
-        img: "/WEBLINEA/public/assets/img/inicio/info2.png",
-        text: "Servicio de calidad, trabajamos con los mejores diseñadores y maquinas "
-    },
-    {
-        img: "/WEBLINEA/public/assets/img/inicio/info3.png",
-        text: "Mejores proyectos, solo con nosotros."
-    }
+//CARRUSEL-------------------------------------------
+
+//Conocenos
+const dataInfo = [
+    { img: "/WEBLINEA/public/assets/img/inicio/info1.png", text: "Contamos con maquinas repotenciadas." },
+    { img: "/WEBLINEA/public/assets/img/inicio/info2.png", text: "Servicio de calidad garantizado." },
+    { img: "/WEBLINEA/public/assets/img/inicio/info3.png", text: "Mejores proyectos con nosotros." }
 ];
+//Mejores proyectos
+const dataServices = [
+    { img: "/WEBLINEA/public/assets/img/inicio/proyect1.png", text: "Material Publicitario." },
+    { img: "/WEBLINEA/public/assets/img/inicio/proyect2.png", text: "Material Editorial." },
+    { img: "/WEBLINEA/public/assets/img/inicio/proyect3.png", text: "Productos Especiales." }
+];
+//Inicializar carruseles
+   InfoCarousel("#carousel-info", dataInfo);
+    InfoCarousel("#carousel-services", dataServices, 5000);
+    
 
-let centerIndex = 1;
+    function InfoCarousel(containerSelector, data, interval = 4500) {
 
-const slots = {
-    left: document.querySelector(".card-slot.left"),
-    center: document.querySelector(".card-slot.center"),
-    right: document.querySelector(".card-slot.right")
-};
+        const container = document.querySelector(containerSelector);
+        if (!container) return;
 
-function render(direction = "next") {
+        let centerIndex = 1;
+        let timer = null;
 
-    const exitClass = direction === "next"
-        ? "card-exit-left"
-        : "card-exit-right";
+        const slots = {
+            left: container.querySelector(".card-slot.left"),
+            center: container.querySelector(".card-slot.center"),
+            right: container.querySelector(".card-slot.right")
+        };
 
-    // animar salida SOLO de las tarjetas actuales
-    document.querySelectorAll(".info-card").forEach(card => {
-        card.classList.add(exitClass);
-    });
+        const btnPrev = container.querySelector(".info-arrow.left");
+        const btnNext = container.querySelector(".info-arrow.right");
 
-    setTimeout(() => {
+        function cardHTML(item) {
+            return `
+                <div class="info-card">
+                    <img src="${item.img}" alt="">
+                    <p>${item.text}</p>
+                </div>
+            `;
+        }
 
-        const left = (centerIndex - 1 + data.length) % data.length;
-        const right = (centerIndex + 1) % data.length;
+        function render(direction = "next") {
 
-        slots.left.innerHTML = cardHTML(data[left]);
-        slots.center.innerHTML = cardHTML(data[centerIndex]);
-        slots.right.innerHTML = cardHTML(data[right]);
+            const exitClass = direction === "next"
+                ? "card-exit-left"
+                : "card-exit-right";
 
-        slots.left.className = "card-slot left is-left";
-        slots.center.className = "card-slot center is-center";
-        slots.right.className = "card-slot right is-right";
-
-        // preparar entrada
-        document.querySelectorAll(".info-card").forEach(card => {
-            card.classList.add("card-enter");
-        });
-
-        requestAnimationFrame(() => {
-            document.querySelectorAll(".info-card").forEach(card => {
-                card.classList.remove("card-enter");
+            container.querySelectorAll(".info-card").forEach(card => {
+                card.classList.add(exitClass);
             });
-        });
 
-    }, 220);
-}
+            setTimeout(() => {
 
-// botones
-document.getElementById("infoNext").onclick = () => {
-    centerIndex = (centerIndex + 1) % data.length;
-    render("next");
-};
+                const leftIndex = (centerIndex - 1 + data.length) % data.length;
+                const rightIndex = (centerIndex + 1) % data.length;
 
-document.getElementById("infoPrev").onclick = () => {
-    centerIndex = (centerIndex - 1 + data.length) % data.length;
-    render("prev");
-};
+                slots.left.innerHTML = cardHTML(data[leftIndex]);
+                slots.center.innerHTML = cardHTML(data[centerIndex]);
+                slots.right.innerHTML = cardHTML(data[rightIndex]);
 
-// autoplay
-setInterval(() => {
-    centerIndex = (centerIndex + 1) % data.length;
-    render("next");
-}, 4500);
+                slots.left.className = "card-slot left is-left";
+                slots.center.className = "card-slot center is-center";
+                slots.right.className = "card-slot right is-right";
 
-// inicial
-render();
+                container.querySelectorAll(".info-card").forEach(card => {
+                    card.classList.add("card-enter");
+                });
+
+                requestAnimationFrame(() => {
+                    container.querySelectorAll(".info-card").forEach(card => {
+                        card.classList.remove("card-enter");
+                    });
+                });
+
+            }, 220);
+        }
+
+        function next() {
+            centerIndex = (centerIndex + 1) % data.length;
+            render("next");
+        }
+
+        function prev() {
+            centerIndex = (centerIndex - 1 + data.length) % data.length;
+            render("prev");
+        }
+
+        btnNext && (btnNext.onclick = next);
+        btnPrev && (btnPrev.onclick = prev);
+
+        timer = setInterval(next, interval);
+
+        render();
+    }
+
+    /* ==========================
+       EXPONER FUNCIÓN GLOBAL
+    ========================== */
+    window.InfoCarousel = InfoCarousel;
 
 
-function cardHTML(item) {
-    return `
-        <div class="info-card">
-            <img src="${item.img}">
-            <p>${item.text}</p>
-        </div>
-    `;
-}
-
-document.getElementById("infoNext").onclick = () => {
-    centerIndex = (centerIndex + 1) % data.length;
-    render();
-};
-
-document.getElementById("infoPrev").onclick = () => {
-    centerIndex = (centerIndex - 1 + data.length) % data.length;
-    render();
-};
-
-// autoplay
-setInterval(() => {
-    centerIndex = (centerIndex + 1) % data.length;
-    render();
-}, 4500);
-
-render();
