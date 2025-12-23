@@ -33,7 +33,7 @@
    <h2 class="info-title">
         <span>CONÓCENOS</span>
    </h2>
-
+ <div class="info-content">
    <p class="info-text">
          LINEA GRAFICA XXI S.A.C. fue fundada el 26 de Septiembre del 2003, gracias 
         a la dedicación y esfuerzo de la familia Aguilar Beltrán, con el paso del tiempo
@@ -62,7 +62,7 @@
 <div class="cotizar-wrapper">
     <a href="#cotizar" class="btn-cotizar">Cotizar ahora</a>
 </div>
-
+</div>
    <!--- MEJORES PROYECTOS ------------------>
 
    <h2 class="info-title">

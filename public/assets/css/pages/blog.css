@@ -1,9 +1,16 @@
 /*body {
     overflow-x: hidden;
 }*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
 /*tituloos*/
 .info-title {
-    width: 100%;
+    
     background: #BE1119;
     color: #fff;
 
@@ -51,7 +58,7 @@
 
 /* Fondo gris a extremos */
 .vision-bg {
-    width: 100vw;
+    width: 100%;
     background: #8e8e8e;
     position: relative;
     left: 50%;
@@ -83,7 +90,7 @@
 
 /* Caja gris mision*/
 .mision-bg {
-    width: 100vw;
+    width: 100%;
     background: #8e8e8e;
     position: relative;
     left: 50%;
@@ -189,7 +196,7 @@
 ----------------------------------*/
 /* ===== CONTENEDOR GENERAL ===== */
 .alt-carousel {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -224,7 +231,7 @@
 
 /* Texto */
 .alt-text {
-    flex: 0 0 35%;
+     flex: 1 1 35%;
     font-weight: bold;
     line-height: 1.4;
     font-size: 18px;
@@ -232,7 +239,7 @@
 
 /* Imagen */
 .alt-image {
-    flex: 0 0 65%;
+     flex: 1 1 65%;
 }
 
 .alt-image img {
@@ -273,7 +280,7 @@
 }
 /* ===== PROYECTOS CARRUSEL ===== */
 .projects-carousel {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -318,7 +325,7 @@
 
 /* Texto derecha */
 .projects-content {
-    flex: 0 0 45%;
+    flex: 1 1 45%;
 }
 
 .projects-subtitle {
@@ -397,10 +404,12 @@
 .faq-highlight {
     width: 100%;
     background: #3a3a3a; /* gris similar al de la imagen */
-    padding: clamp(30px, 5vw, 60px) 20px;
+    padding: clamp(20px, 4vw, 40px) 20px;
      
 }
-
+.faq-highlight-container > * {
+    min-width: 0;
+}
 .faq-highlight-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -409,7 +418,7 @@
     gap: 40px;
 }
 .faq-highlight-image {
-    flex: 0 0 40%;
+   flex: 1 1 40%;
     display: flex;
     justify-content: center;
 }
@@ -422,7 +431,7 @@
     display: block;
 }
 .faq-highlight-content {
-    flex: 0 0 60%;
+   flex: 1 1 60%;
     color: #fff;
 }
 
@@ -438,6 +447,11 @@
     margin-bottom: 25px;
     color: #e0e0e0;
 }
+.faq-highlight-text {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
 .faq-highlight-btn-text {
     background: none;
     border: none;
