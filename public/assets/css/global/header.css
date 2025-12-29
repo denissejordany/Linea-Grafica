@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'Romelio Sans';
+    src: url('/assets/fonts/romelio_sans/Romelio.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 :root{
-    --nav-font-size: 22px;
+    --nav-font-size: 33px;
     --nav-letter-spacing: 0.02em;
     --nav-word-spacing: 0.12em;
     --nav-gap: 22px;
@@ -20,7 +27,6 @@
     z-index: 2000;
 }
 
-
 .header .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -36,10 +42,9 @@
 .nav {
     display: flex;
     gap: 25px;
+    
 }
 
-
-/* 🔥 Eliminamos la tembladera dejando el borde siempre presente */
 .nav-item {
     text-decoration: none;
     color: var(--accent);
@@ -47,11 +52,8 @@
     letter-spacing: var(--nav-letter-spacing);
     word-spacing: var(--nav-word-spacing);
     padding: var(--nav-padding-y) var(--nav-padding-x);
-    border-radius: 999px;
-
-    
+    border-radius: 999px;    
     border: 2px solid transparent;
-
     /* cambioooo */
     transition: background .25s ease, 
                 border-color .25s ease,
@@ -102,7 +104,7 @@
     }
 
     .nav-item {
-        font-size: 16px;
+        font-size: 33px;
         padding: 8px 12px;
         border-radius: 999px;
     }
@@ -150,7 +152,7 @@ padding: 10px 16px;
 .nav-item {
         width: 100%;
         text-align: left;
-        font-size: 17px;
+        font-size: 19px;
         padding: 12px 16px;
         position: relative;
         padding-left: 44px; /* espacio para icono */

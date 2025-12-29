@@ -40,17 +40,17 @@
         <nav class="nav" id="navMenu">
             <a class="nav-item <?php echo ($current === 'inicio') ? 'active' : '' ?>"
                href="<?php echo Routes::url('inicio'); ?>">
-                Inicio
+                INICIO
             </a>
 
             <a class="nav-item <?php echo ($current === 'tienda') ? 'active' : '' ?>"
                href="<?php echo Routes::url('tienda'); ?>">
-                Tienda
+                TIENDA
             </a>
 
             <a class="nav-item <?php echo ($current === 'blog') ? 'active' : '' ?>"
                href="<?php echo Routes::url('blog'); ?>">
-                Blog
+                BLOG
             </a>
         </nav>
 
