@@ -1,3 +1,10 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
 .info-title {
     width: 100%;
     background: #BE1119;
@@ -6,11 +13,17 @@
     font-size: 32px;
     font-weight: 700;
     text-align: center;
-
+font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
     padding: 26px 0;
     margin-bottom: 24px;
 }
+@media (max-width: 768px) {
 
+    .info-title {
+        font-size: 23px;
+    }
+}
 .politicas {
     max-width: 900px;
     margin: 0 auto;
@@ -28,6 +41,8 @@
 .politica-item span {
     font-size: 16px;
     color: #000;
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
 }
 
 .politica-item a {
@@ -37,12 +52,21 @@
     display: flex;
     align-items: center;
     gap: 6px;
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
+}
+.politica-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
-.politica-item a::after {
-    content: "🔗";
-    color: #c10000;
+.politica-icon {
+    width: 14px;
+    height: auto;
+    display: block;
 }
+
 
 .politicas-boton {
     text-align: center;
@@ -57,4 +81,63 @@
     text-decoration: none;
     font-size: 16px;
     display: inline-block;
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
+}
+@media (max-width: 1040px) and (min-width: 769px) {
+
+    .politica-item {
+        padding: 12px 0;
+    }
+
+    .politica-item span {
+        font-size: 14px;
+    }
+
+    .politica-item a {
+        font-size: 13px;
+        gap: 4px;
+    }
+
+    .politicas-boton {
+        margin-top: 40px;
+    }
+
+    .btn-navegar {
+        font-size: 14px;
+        padding: 10px 28px;
+        border-radius: 8px;
+    }
+}
+@media (max-width: 768px) {
+
+    .politica-item {
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .politica-item span {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .politica-item a {
+        font-size: 12px;
+        gap: 4px;
+        white-space: nowrap;
+    }
+
+    .politica-icon {
+        width: 12px;
+    }
+
+    .politicas-boton {
+        margin-top: 30px;
+    }
+
+    .btn-navegar {
+        font-size: 13px;
+        padding: 9px 22px;
+        border-radius: 8px;
+    }
 }
