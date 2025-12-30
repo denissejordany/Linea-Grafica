@@ -1,5 +1,5 @@
 /* =========================
-   FOOTER – BASE
+   FOOTER – BASE (MISMO QUE ORIGINAL)
    ========================= */
 
 .footer {
@@ -17,79 +17,72 @@
 
 /* =========================
    FOOTER – HEADINGS
+   (MISMA ESTRUCTURA, UNA SOLA COLUMNA)
    ========================= */
 
-.footer-headings {
+.footer-tienda .footer-headings {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
-    margin-bottom: 20px;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px; /* CLAVE: igual al original */
 }
 
-.footer-title {
+.footer-tienda .footer-title {
     font-size: 30px;
     font-weight: 700;
     margin: 0;
     text-align: left;
-
-
 }
+
 /* =========================
-   FOOTER – GRID DE FILAS
+   FOOTER – GRID
    ========================= */
 
-.footer-grid {
+.footer-tienda .footer-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
+    grid-template-columns: 1fr;
 }
+
 /* =========================
-   LISTAS
+   LISTA ENLACES
    ========================= */
 
-.footer-links,
-.footer-contact {
+.footer-tienda .footer-links {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* =========================
-   FILAS ALINEADAS
-   ========================= */
-
-.footer-links li,
-.footer-contact li {
+.footer-tienda .footer-links li {
     display: flex;
     align-items: center;
     gap: 12px;
 
     font-size: 25px;
     line-height: 1.4;
-
-    min-height: 40px; /* garantiza mismo piso */
+    min-height: 40px; /* IGUAL QUE ORIGINAL */
 }
+
 /* =========================
-   ENLACES RÁPIDOS
+   ENLACES
    ========================= */
 
-.footer-links a {
+.footer-tienda .footer-links a {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-
     color: #ffffff;
     text-decoration: none;
 }
 
-.footer-links a:hover {
+.footer-tienda .footer-links a:hover {
     text-decoration: underline;
 }
+
 /* =========================
    ICONOS
    ========================= */
 
-.footer .icon {
+.footer-tienda .icon {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
@@ -99,19 +92,20 @@
     justify-content: center;
 }
 
-.footer .icon img {
+.footer-tienda .icon img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+
 /* =========================
    COPYRIGHT
    ========================= */
 
-.footer-copy {
+.footer-tienda .footer-copy {
     font-size: 13px;
     opacity: 0.9;
-    align-items: flex-start;
+    margin-top: 0; /* MISMA POSICIÓN QUE ORIGINAL */
 }
 
 /* =========================
@@ -124,25 +118,20 @@
         padding: 0 32px;
     }
 
-    .footer-headings,
-    .footer-grid {
-        column-gap: 48px;
-    }
-
-    .footer-title {
+    .footer-tienda .footer-title {
         font-size: 26px;
     }
 
-    .footer-links li,
-    .footer-contact li {
+    .footer-tienda .footer-links li {
         font-size: 20px;
         min-height: 36px;
     }
 
-    .footer-copy {
+    .footer-tienda .footer-copy {
         font-size: 12px;
     }
 }
+
 /* =========================
    FOOTER – MOBILE
    ========================= */
@@ -153,37 +142,16 @@
         padding: 0 20px;
     }
 
-    .footer-headings {
-        grid-template-columns: 1fr;
-        margin-bottom: 16px;
-    }
-
-    /* Ocultar título "Contáctanos" */
-    .footer-headings h4:nth-child(2) {
-        display: none;
-    }
-
-    /* Una sola columna */
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Ocultar columna contacto */
-    .footer-contact {
-        display: none;
-    }
-
-    /* Tipografía más pequeña */
-    .footer-title {
+    .footer-tienda .footer-title {
         font-size: 22px;
     }
 
-    .footer-links li {
+    .footer-tienda .footer-links li {
         font-size: 17px;
         min-height: auto;
     }
 
-    .footer-copy {
+    .footer-tienda .footer-copy {
         margin-top: 24px;
         font-size: 12px;
     }

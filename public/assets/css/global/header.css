@@ -7,7 +7,7 @@
 }
 
 :root{
-    --nav-font-size: 33px;
+    --nav-font-size: 27px;
     --nav-letter-spacing: 0.02em;
     --nav-word-spacing: 0.12em;
     --nav-gap: 22px;
@@ -89,7 +89,11 @@
 .menu-btn.active .menu-icon {
     transform: rotate(90deg) scale(0.9);
 }
-
+/* LOGO */
+.logo img {
+    height: 120px;
+     transition: transform .25s ease;
+}
 @media (min-width: 769px) {
 
 
@@ -104,7 +108,7 @@
     }
 
     .nav-item {
-        font-size: 33px;
+        font-size: 27px;
         padding: 8px 12px;
         border-radius: 999px;
     }
@@ -115,6 +119,28 @@
         border: 2px solid #8f0303;
     }
 }
+@media (max-width: 1040px) and (min-width: 769px) {
+
+    :root {
+        --nav-font-size: 24px;
+        --nav-letter-spacing: 0.015em;
+        --nav-word-spacing: 0.08em;
+        --nav-gap: 14px;
+        --nav-padding-y: 6px;
+        --nav-padding-x: 12px;
+    }
+
+    .nav {
+        gap: var(--nav-gap);
+    }
+
+    .nav-item {
+        font-size: var(--nav-font-size);
+        padding: var(--nav-padding-y) var(--nav-padding-x);
+    }
+
+}
+
 @media (max-width: 768px) {
 
     .header .container {
@@ -200,9 +226,5 @@ padding: 10px 16px;
 }
 
 
-/* LOGO */
-.logo img {
-    height: 120px;
-     transition: transform .25s ease;
-}
+
 

@@ -7,7 +7,7 @@ class PoliticasController{
         $pageStyles = [
             'global/header.css',
             'pages/politicas.css',
-            'global/footer.css'
+            'global/footer_politicas.css'
         ];
 
         require_once "app/views/layouts/header_politicas.php";

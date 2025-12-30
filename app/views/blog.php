@@ -40,7 +40,7 @@
 <!----------FOTOS DE LAS INSTALACIONES-------->
 <h2 class="info-title">
     <span>FOTOS DE LAS INSTALACIONES</span>
-</h2>
+</h2> <br><br>
 <section class="alt-carousel">
     <div class="alt-carousel-inner">
 
@@ -103,11 +103,11 @@
                 </div>
             </div>
         </div>
-<div class="alt-dots">
+ <div class="alt-dots">
     <?php for ($i = 0; $i < 6; $i++): ?>
         <button class="alt-dot" data-slide="<?php echo $i; ?>"></button>
     <?php endfor; ?>
-</div>
+ </div>
 
         <button type="button" class="alt-btn alt-prev" aria-label="Slide anterior">
             &#10094;
@@ -117,7 +117,7 @@
             &#10095;
         </button>
 
-
+ <br><br>
     </div>
 </section>
 
@@ -342,7 +342,7 @@
 
 <div class="cotizar-wrapper">
     <a href="#cotizar" class="btn-cotizar">Cotizar ahora</a>
-</div>
+</div><br><br>
 <!---------- PREGUNTAS FRECUENTES-------->
 <div class="faq-wrapper">
     <h2 class="info-title">
@@ -443,7 +443,7 @@
         </div>
 
         <div class="brochure-text">
-            <p>
+            <p><br>
                 Cuando se trata de materiales como los brochures que acabamos de discutir,
                  la calidad es absolutamente indispensable, ya que estos folletos son la 
                  cara tangible de su negocio. La impresión debe reflejar el profesionalismo de la marca.
@@ -471,7 +471,7 @@
 </section>
 <div class="cotizar-wrapper">
     <a href="#cotizar" class="btn-cotizar">Cotizar ahora</a>
-</div>
+</div><br><br>
 
 <!----------CONOCE A LÍNEA GRÁFICA-------->
 <h2 class="info-title">
@@ -487,7 +487,7 @@
  <div class="calidad-texts">
         <div class="calidad-text">
             <p>
-                Cuando hablamos de calidad, hablamos de línea gráfica
+                Cuando hablamos de calidad, hablamos de línea gráfica.
             </p>
             
         </div>
@@ -523,7 +523,7 @@
 </section>
 <div class="cotizar-wrapper">
     <a href="#cotizar" class="btn-cotizar">Cotizar ahora</a>
-</div>
+</div><br><br>
 <!----------¿LOS TRABAJOS SON MEJOR EN RGB o CMYK?-------->
 <h2 class="info-title">
     <span>¿LOS TRABAJOS SON MEJOR EN RGB o CMYK?</span>
@@ -568,4 +568,4 @@
 <div class="cotizar-wrapper">
     <a href="#cotizar" class="btn-cotizar">Cotizar ahora</a>
 </div>
-<br><br>
+<br><br><br>

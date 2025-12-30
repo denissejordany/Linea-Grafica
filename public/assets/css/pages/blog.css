@@ -36,7 +36,7 @@ html, body {
     background: #BE1119;
     color: #fff;
 
-    font-size: 47px;
+    font-size: 32px;
     
     text-align: center;
 font-family: 'Made Okine Sans', sans-serif;
@@ -72,6 +72,14 @@ font-family: 'Made Okine Sans', sans-serif;
 .btn-cotizar:active {
     transform: translateY(0);
 }
+@media (max-width: 1040px) and (min-width: 769px) {
+
+    .btn-cotizar {
+        font-size: 24px;
+        padding: 12px 30px;
+        border-radius: 12px;
+    }
+}
 @media (max-width: 768px) {
 
     .btn-cotizar {
@@ -93,12 +101,13 @@ font-family: 'Made Okine Sans', sans-serif;
 }
 
 /* Fondo gris a extremos */
+.mision-bg,
 .vision-bg {
-    width: 100%;
+    width: 100vw;
     background: #8e8e8e;
     position: relative;
-     margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
+    left: 50%;
+    transform: translateX(-50%);
     padding: 60px 20px;
 }
 
@@ -111,7 +120,7 @@ font-family: 'Made Okine Sans', sans-serif;
 }
 
 .vision-box h2 {
-    font-size: 39px;
+    font-size: 30px;
     letter-spacing: 1px;
     margin-bottom: 15px;
     font-family: 'Made Okine Sans', sans-serif;
@@ -119,20 +128,13 @@ font-family: 'Made Okine Sans', sans-serif;
 }
 
 .vision-box p {
-    font-size: 27px;
+    font-size: 25px;
     line-height: 1.6;
     text-align: justify;
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
 }
 
-/* Caja gris mision*/
-.mision-bg {
-    width: 100%;
-    background: #8e8e8e;
-    position: relative;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    padding: 60px 20px;
-}
 
 .mision-box {
     max-width: 900px;
@@ -142,7 +144,7 @@ font-family: 'Made Okine Sans', sans-serif;
 }
 
 .mision-box h2 {
-    font-size: 39px;
+    font-size: 30px;
     letter-spacing: 1px;
     margin-bottom: 15px;
     font-family: 'Made Okine Sans', sans-serif;
@@ -150,9 +152,11 @@ font-family: 'Made Okine Sans', sans-serif;
 }
 
 .mision-box p {
-    font-size: 27px;
+    font-size: 25px;
     line-height: 1.6;
     text-align: justify;
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
 }
 /* ===== TARJETAS ===== */
 .nosotros-cards {
@@ -160,6 +164,11 @@ font-family: 'Made Okine Sans', sans-serif;
     justify-content: center;
     gap: 80px;
     flex-wrap: wrap;
+}
+.nosotros-section {
+    width: 100%;
+    overflow-x: hidden; /* solo aquí, no en body */
+    padding-bottom: 80px;
 }
 
 .nosotros-card {
@@ -317,7 +326,7 @@ font-family: 'Made Okine Sans', sans-serif;
     display: flex;
     align-items: center;
    
-    gap: 10px;
+    gap: 40px;
     padding: 40px 90px;
     box-sizing: border-box;
 }
@@ -334,7 +343,7 @@ font-family: 'Made Okine Sans', sans-serif;
     line-height: 1.4;
     font-size: 28px;
     font-family: 'Made Okine Sans', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 /* Imagen */
@@ -476,6 +485,7 @@ font-family: 'Made Okine Sans', sans-serif;
 /* Texto derecha */
 .projects-content {
     flex: 1 1 45%;
+    max-width: 550px;
 }
 
 .projects-subtitle {
@@ -540,6 +550,7 @@ h4 {
     }
     .projects-content {
         flex: 0 0 100%;
+        max-width: 350px
     }
 
     .projects-subtitle {
@@ -674,7 +685,7 @@ font-family: 'Made Okine Sans', sans-serif;
 /* BLOQUE SUPERIOR */
 .brochure-top {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     align-items: flex-start;
     margin-bottom: 70px;
 }
@@ -698,7 +709,7 @@ font-family: 'Made Okine Sans', sans-serif;
     margin-bottom: 24px;
     line-height: 1.6;
     color: #333;
-    font-size: 26px;
+    font-size: 25px;
     font-family: 'Made Okine Sans', sans-serif;
     font-weight: 400;
     text-align: justify;
@@ -724,7 +735,8 @@ font-family: 'Made Okine Sans', sans-serif;
 }
 
 .brochure-center-text p {
-    font-size: 26px;
+    font-size: 25px;
+     line-height: 1.6;
     color: #000;
     font-family: 'Made Okine Sans', sans-serif;
     font-weight: 400;
@@ -799,7 +811,7 @@ font-family: 'Made Okine Sans', sans-serif;
     }
 
     .brochure-text p {
-        font-size: 15px;
+        font-size: 17px;
         line-height: 1.6;
         text-align: justify;
         padding: 0 12px;
@@ -865,7 +877,7 @@ font-family: 'Made Okine Sans', sans-serif;
     margin: 0;
     line-height: 1.6;
     color: #333;
-    font-size: 26px;
+    font-size: 25px;
     font-family: 'Made Okine Sans', sans-serif;
     font-weight: 400;
     text-align: justify;
@@ -890,7 +902,7 @@ font-family: 'Made Okine Sans', sans-serif;
 }
 
 .calidad-center-text p {
-    font-size: 26px;
+    font-size: 25px;
     color: #000;
     font-family: 'Made Okine Sans', sans-serif;
     font-weight: 400;
@@ -898,7 +910,7 @@ font-family: 'Made Okine Sans', sans-serif;
     text-justify: inter-word;
 }
 .calidad-center-text1 p {
-    font-size: 26px;
+    font-size: 25px;
     color: #000;
     font-family: 'Made Okine Sans', sans-serif;
     font-weight: 400;
@@ -906,7 +918,7 @@ font-family: 'Made Okine Sans', sans-serif;
     text-justify: inter-word;
 }
 .calidad-center-text2 p {
-    font-size: 26px;
+    font-size: 25px;
     color: #000;
     font-family: 'Made Okine Sans', sans-serif;
     font-weight: 400;
@@ -980,10 +992,11 @@ font-family: 'Made Okine Sans', sans-serif;
     }
 
     .calidad-text1 p {
-        font-size: 15px;
+        font-size: 17px;
         line-height: 1.6;
         text-align: justify;
         padding: 0 14px;
+        margin: 24px auto 0;
         font-family: 'Made Okine Sans', sans-serif;
         font-weight: 400;
         max-width: 510px;
@@ -1008,7 +1021,7 @@ font-family: 'Made Okine Sans', sans-serif;
     /* ───────── TEXTO FINAL VISIBLE ───────── */
     .calidad-center-text1 p
      {
-        font-size: 15px;
+        font-size: 17px;
         line-height: 1.6;
         max-width: 510px;
         margin: 24px auto 0;
@@ -1049,7 +1062,7 @@ font-family: 'Made Okine Sans', sans-serif;
 }
 
 .trabajos-center-text p {
-    font-size: 26px;
+    font-size: 25px;
     color: #000;
     font-family: 'Made Okine Sans', sans-serif;
     font-weight: 400;
@@ -1057,7 +1070,7 @@ font-family: 'Made Okine Sans', sans-serif;
     text-justify: inter-word;
 }
 .trabajos-center-text1 p {
-    font-size: 26px;
+    font-size: 25px;
     color: #000;
     font-family: 'Made Okine Sans', sans-serif;
     font-weight: 400;
@@ -1065,7 +1078,7 @@ font-family: 'Made Okine Sans', sans-serif;
     text-justify: inter-word;
 }
 .trabajos-center-text2 p {
-    font-size: 26px;
+    font-size: 25px;
     color: #000;
     font-family: 'Made Okine Sans', sans-serif;
     font-weight: 400;

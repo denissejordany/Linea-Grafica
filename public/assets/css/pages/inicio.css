@@ -105,31 +105,48 @@ html, body {
     
     background: #BE1119;
     color: #fff;
-
     font-size: 32px;
     font-weight: 700;
     text-align: center;
-
+font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
     padding: 26px 0;
     margin-bottom: 24px;
 }
+@media (max-width: 768px) {
 
-
-.info-text {
-    max-width: 720px;
-    margin: 0 auto 50px;
-    line-height: 1.6;
-    color: #000000;
+    .info-title {
+        font-size: 23px;
+    }
 }
 
+.info-text {
+    max-width: 920px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+    color: #000000;    
+font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+     text-align: justify;
+    text-justify: inter-word;
+}
 
+@media (max-width: 768px) {
+
+    .info-text {
+        font-size: 20px;
+    }
+}
 /* ============================
    CAROUSEL
-============================ */.info-carousel {
+============================ */
+.info-carousel {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 24px;
+    font-size: 20px;
 }
 
 /* Slots fijos */
@@ -156,6 +173,9 @@ html, body {
     transition:
         opacity .45s ease,
         transform .45s ease;
+        
+font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
 }
 
 .info-card img {
@@ -239,7 +259,23 @@ html, body {
         transform: scale(1);
     }
 }
-/*------Boton cotizar ahora -----*/
+.info-center-text2 p {
+    font-size: 26px;
+    color: #000;
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-justify: inter-word;
+}
+@media (max-width: 768px) {
+
+   .info-center-text2 p {
+        font-size: 16px;
+        
+    }
+
+}
+/*BOTON COTIZAR*/
 .cotizar-wrapper {
     width: 100%;
     display: flex;
@@ -252,10 +288,11 @@ html, body {
     color: #fff;
     padding: 14px 36px;
     border-radius: 14px;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 30px;
     text-decoration: none;
     transition: background-color 0.25s ease, transform 0.2s ease;
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
 }
 
 .btn-cotizar:hover {
@@ -265,6 +302,27 @@ html, body {
 
 .btn-cotizar:active {
     transform: translateY(0);
+}
+@media (max-width: 1040px) and (min-width: 769px) {
+
+    .btn-cotizar {
+        font-size: 24px;
+        padding: 12px 30px;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .btn-cotizar {
+        font-size: 16px;
+        padding: 10px 24px;
+        border-radius: 10px;
+    }
+
+    .cotizar-wrapper {
+        margin-top: 24px;
+    }
 }
 
 /*------------MEJORES CLIENTES IMAGENES---------------*/
@@ -290,8 +348,14 @@ html, body {
     justify-items: center;
 }
 
+.clientes-grid img:nth-last-child(2),
+.clientes-grid img:last-child {
+    transform: translateX(100%);
+}
+
+
 .clientes-grid img {
-    max-width: 160px;
+    max-width: 190px;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -313,6 +377,6 @@ html, body {
     }
 
     .clientes-grid img {
-        max-width: 110px;
+        max-width: 130px;
     }
 }
