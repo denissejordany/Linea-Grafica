@@ -36,7 +36,7 @@
 
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 10%;
 
     border: 2px solid #c40000;
     border-radius: 20px;
@@ -55,12 +55,65 @@
     border-radius: 6px;
 }
 
+.info-lines {
+    max-width: 360px;     /* 🔥 controla el ancho del texto */
+    margin: 0;
+    padding: 0;
+
+    font-size: 30px;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
+}
+
+.info-lines span {
+    display: inline-block;  /* solo ocupa el texto */
+    width: auto;            /* 🔥 IMPORTANTE */
+}
+
+.info-lines .highlight {
+    font-weight: 700;
+}
+
+.info-text-tema {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 10px;
+}
+
 /* Texto */
 .info-text {
     flex: 1;
     font-size: 18px;
     line-height: 1.6;
     color: #333;
+    text-align: left;
+    max-width: 450px;
+}
+
+.card-btn-port {
+    margin-top: 20px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 30px;          /* 🔥 MISMO tamaño que info-lines */
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: #000;
+    text-decoration: none;
+}
+
+/* Icono */
+.card-btn-port .btn-icon {
+    font-size: 20px;          /* ligeramente más grande */
+    color: #fff;
+    display: flex;
+    align-items: center;
 }
 
 /* ============================
@@ -195,5 +248,86 @@
 @media (max-width: 768px) {
     .cards-container {
         flex-direction: column;
+    }
+
+     /* Contenedor texto */
+    .info-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;     /* 🔥 centra todo */
+        margin-top: 28px;        /* 🔥 separación de la imagen */
+        text-align: center;
+    }
+
+    /* Texto */
+    .info-lines {
+        font-size: 20px;
+        text-align: center;      /* 🔥 ya no a la izquierda */
+        max-width: 100%;
+    }
+
+    /* Botón */
+    .card-btn-port {
+        font-size: 20px;
+        justify-content: center; /* 🔥 centra icono + texto */
+        margin-top: 20px;
+    }
+
+    .card-btn-port .btn-icon {
+        font-size: 24px;
+    }
+}
+
+/* ============================
+   RESPONSIVE - TABLET
+============================ */
+
+@media (max-width: 1024px) {
+    .info-lines {
+        font-size: 24px;
+    }
+
+    .card-btn-port {
+        font-size: 24px;
+    }
+
+    .card-btn-port .btn-icon {
+        font-size: 28px;
+    }
+}
+
+/* ============================
+   RESPONSIVE - MOBILE
+============================ */
+
+@media (max-width: 768px) {
+    .info-lines {
+        font-size: 20px;
+    }
+
+    .card-btn-port {
+        font-size: 20px;
+        gap: 10px;
+    }
+
+    .card-btn-port .btn-icon {
+        font-size: 24px;
+    }
+}
+
+/* ============================
+   RESPONSIVE - MOBILE MINI
+============================ */
+@media (max-width: 480px) {
+    .info-lines {
+        font-size: 18px;
+    }
+
+    .card-btn-port {
+        font-size: 18px;
+    }
+
+    .card-btn-port .btn-icon {
+        font-size: 22px;
     }
 }

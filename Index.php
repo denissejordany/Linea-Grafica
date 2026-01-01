@@ -1,5 +1,5 @@
 <?php
-require_once "app/config/Routes.php";
+require_once "app/config/routes.php";
 
 $route = $_GET['route'] ?? 'inicio';
 

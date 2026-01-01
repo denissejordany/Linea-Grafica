@@ -1,0 +1,88 @@
+/* Desktop */
+.mobile-services {
+    display: none;
+}
+
+
+.mobile-service {
+    margin-bottom: 40px;
+}
+
+.mobile-title {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(37% - 37vw);
+    padding: 26px 0;
+
+    background: #c40000;
+    color: #fff;
+
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.mobile-carousel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 👇 ESTE ES EL RECORTE REAL */
+.carousel-viewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.carousel-track-tienda {
+    display: flex;              /* 🔥 CLAVE */
+    transition: transform 0.4s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    flex-shrink: 0;             /* 🔥 evita que se encojan */
+    text-align: left;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+
+.carousel-btn {
+    background: #c40000;
+    color: #fff;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.mobile-btn {
+    display: block;
+    margin: 16px auto 0;
+    background: #c40000;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    /* Ocultar SOLO el botón "Descubre más" */
+    .card-btn {
+        display: none !important;
+    }
+
+    .mobile-services {
+        display: block;
+        padding: 20px;
+    }
+}
