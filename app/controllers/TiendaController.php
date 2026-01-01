@@ -18,6 +18,6 @@ class TiendaController
 
         require_once "app/views/layouts/header.php";
         require_once "app/views/tienda.php";
-        require_once "app/views/layouts/footer.php";
+        require_once "app/views/layouts/footer_tienda.php";
     }
 }

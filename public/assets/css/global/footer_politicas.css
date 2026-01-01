@@ -1,5 +1,5 @@
 /* =========================
-   FOOTER – BASE
+   FOOTER – BASE (MISMO QUE ORIGINAL)
    ========================= */
 
 .footer {
@@ -19,77 +19,53 @@
    FOOTER – HEADINGS
    ========================= */
 
-.footer-headings {
+.footer-politicas .footer-headings {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
-    margin-bottom: 20px;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px; /* MISMO ESPACIADO */
 }
 
-.footer-title {
+.footer-politicas .footer-title {
     font-size: 30px;
     font-weight: 700;
     margin: 0;
     text-align: left;
-
-
 }
+
 /* =========================
-   FOOTER – GRID DE FILAS
+   FOOTER – GRID
    ========================= */
 
-.footer-grid {
+.footer-politicas .footer-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
+    grid-template-columns: 1fr;
 }
+
 /* =========================
-   LISTAS
+   LISTA CONTACTO
    ========================= */
 
-.footer-links,
-.footer-contact {
+.footer-politicas .footer-contact {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* =========================
-   FILAS ALINEADAS
-   ========================= */
-
-.footer-links li,
-.footer-contact li {
+.footer-politicas .footer-contact li {
     display: flex;
     align-items: center;
     gap: 12px;
 
     font-size: 25px;
     line-height: 1.4;
-
-    min-height: 40px; /* garantiza mismo piso */
-}
-/* =========================
-   ENLACES RÁPIDOS
-   ========================= */
-
-.footer-links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-
-    color: #ffffff;
-    text-decoration: none;
+    min-height: 40px; /* MISMO PISO */
 }
 
-.footer-links a:hover {
-    text-decoration: underline;
-}
 /* =========================
    ICONOS
    ========================= */
 
-.footer .icon {
+.footer-politicas .icon {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
@@ -99,19 +75,21 @@
     justify-content: center;
 }
 
-.footer .icon img {
+.footer-politicas .icon img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+
 /* =========================
    COPYRIGHT
    ========================= */
 
-.footer-copy {
-    font-size: 13px;
+.footer-politicas .footer-copy {
+    font-size: 20px;
     opacity: 0.9;
-    align-items: flex-start;
+    margin-top: 0;
+    
 }
 
 /* =========================
@@ -124,25 +102,20 @@
         padding: 0 32px;
     }
 
-    .footer-headings,
-    .footer-grid {
-        column-gap: 48px;
-    }
-
-    .footer-title {
+    .footer-politicas .footer-title {
         font-size: 26px;
     }
 
-    .footer-links li,
-    .footer-contact li {
+    .footer-politicas .footer-contact li {
         font-size: 20px;
         min-height: 36px;
     }
 
-    .footer-copy {
-        font-size: 12px;
+    .footer-politicas .footer-copy {
+        font-size: 15px;
     }
 }
+
 /* =========================
    FOOTER – MOBILE
    ========================= */
@@ -153,38 +126,17 @@
         padding: 0 20px;
     }
 
-    .footer-headings {
-        grid-template-columns: 1fr;
-        margin-bottom: 16px;
-    }
-
-    /* Ocultar título "Contáctanos" */
-    .footer-headings h4:nth-child(2) {
-        display: none;
-    }
-
-    /* Una sola columna */
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Ocultar columna contacto */
-    .footer-contact {
-        display: none;
-    }
-
-    /* Tipografía más pequeña */
-    .footer-title {
+    .footer-politicas .footer-title {
         font-size: 22px;
     }
 
-    .footer-links li {
+    .footer-politicas .footer-contact li {
         font-size: 17px;
         min-height: auto;
     }
 
-    .footer-copy {
+    .footer-politicas .footer-copy {
         margin-top: 24px;
-        font-size: 12px;
+        font-size: 15px;
     }
 }

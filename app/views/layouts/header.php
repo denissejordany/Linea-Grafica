@@ -3,6 +3,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo isset($title) ? $title . ' | Linea Grafica' : 'Mi sitio'; ?></title>
 
     <?php if (!empty($pageStyles)): ?>
@@ -39,17 +40,17 @@
         <nav class="nav" id="navMenu">
             <a class="nav-item <?php echo ($current === 'inicio') ? 'active' : '' ?>"
                href="<?php echo Routes::url('inicio'); ?>">
-                Inicio
+                INICIO
             </a>
 
             <a class="nav-item <?php echo ($current === 'tienda') ? 'active' : '' ?>"
                href="<?php echo Routes::url('tienda'); ?>">
-                Tienda
+                TIENDA
             </a>
 
             <a class="nav-item <?php echo ($current === 'blog') ? 'active' : '' ?>"
                href="<?php echo Routes::url('blog'); ?>">
-                Blog
+                BLOG
             </a>
         </nav>
 

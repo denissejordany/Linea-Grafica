@@ -1,15 +1,14 @@
 </main>
 
-<footer class="footer">
+<footer class="footer footer-tienda">
     <div class="footer-container">
 
-        <!-- Encabezados -->
+        <!-- Encabezados (MISMA ESTRUCTURA) -->
         <div class="footer-headings">
             <h4 class="footer-title">Enlaces rápidos</h4>
-            <h4 class="footer-title">Contáctanos</h4>
         </div>
 
-        <!-- Grilla de filas alineadas -->
+        <!-- Grid (MISMA ESTRUCTURA, una sola columna) -->
         <div class="footer-grid">
 
             <!-- Columna Enlaces -->
@@ -40,43 +39,16 @@
                         Preguntas frecuentes
                     </a>
                 </li>
-                
             </ul>
 
-            <!-- Columna Contacto -->
-            <ul class="footer-contact">
-                <li>
-                    <span class="icon">
-                        <img src="<?php echo Routes::img('footer/ubicacion.png'); ?>" alt="">
-                    </span>
-                    Av. Bolivia 729 Breña, Lima – Perú
-                </li>
+            <!-- Copyright (MISMA POSICIÓN QUE EL ORIGINAL) -->
+            <p class="footer-copy">
+                ©2025 Línea Gráfica. Todos los derechos reservados
+            </p>
 
-                <li>
-                    <span class="icon">
-                        <img src="<?php echo Routes::img('footer/telefono.png'); ?>" alt="">
-                    </span>
-                    +51 940 909 749
-                </li>
-
-                <li>
-                    <span class="icon">
-                        <img src="<?php echo Routes::img('footer/correo.png'); ?>" alt="">
-                    </span>
-                    ventas@lineagraficaxxi.com
-                </li>
-            </ul>
- <p class="footer-copy">
-            ©2025 Línea Gráfica. Todos los derechos reservados
-        </p>
         </div>
     </div>
 </footer>
 
-
-<script src="<?php echo Routes::js('main.js'); ?>"></script>
-<script src="<?php echo Routes::js('inicio.js'); ?>"></script>
-<script src="<?php echo Routes::js('serviciosTienda.js'); ?>"></script>
-<script src="<?php echo Routes::js('blog.js'); ?>"></script>
 </body>
 </html>
