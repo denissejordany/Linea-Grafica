@@ -62,7 +62,7 @@
    </div><br><br><br>
 <div class="cotizar-wrapper">
     
-    <a href="#cotizar" class="btn-cotizar">Cotizar ahora</a>
+    <a  href="<?= Routes::url('tienda'); ?>#cotizar" class="btn-cotizar">Cotizar ahora</a>
 </div>
 <br>
 </div>
@@ -89,7 +89,7 @@
         <p>No esperes más, cotiza ahora</p>
     </div><br>
    <div class="cotizar-wrapper">
-    <a href="#cotizar" class="btn-cotizar">Cotizar ahora</a>
+    <a  href="<?= Routes::url('tienda'); ?>#cotizar" class="btn-cotizar">Cotizar ahora</a>
    </div>
 <br>
 <!----------NUESTROS CLIENTES-------->

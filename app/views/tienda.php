@@ -10,23 +10,25 @@
         <span>DISEÑO Y ARTE</span>
    </h2>
 
-   <div class="info-box">
-        <div class="info-image">
-            <img src="<?= Routes::imgTienda('trabajador_de_linea_1.png'); ?>" alt="Diseño y Arte">
-        </div>
+    <div class="info-box-content">
+        <div class="info-box">
+            <div class="info-image">
+                <img src="<?= Routes::imgTienda('trabajador_de_linea_1.png'); ?>" alt="Diseño y Arte">
+            </div>
 
-        <div class="info-text">
-            <p class="info-lines">
-                Bienvenido a la parte<br>
-                de diseño y arte,<br>
-                ahora podrás ver<br>
-                nuestros proyectos,<br>
-                <strong>¡Continúa navegando!</strong>
-            </p>
-            <a href="#" class="card-btn-port" data-service="publicitario">
-                <span class="btn-icon">❯</span>
-                Descubre más
-            </a>
+            <div class="info-text">
+                <p class="info-lines">
+                    Bienvenido a la parte<br>
+                    de diseño y arte,<br>
+                    ahora podrás ver<br>
+                    nuestros proyectos,<br>
+                    <strong>¡Continúa navegando!</strong>
+                </p>
+                <a href="#" class="card-btn-port" data-service="publicitario">
+                    <span class="btn-icon">❯</span>
+                    Descubre más
+                </a>
+            </div>
         </div>
     </div>
 
