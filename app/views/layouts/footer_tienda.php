@@ -49,6 +49,12 @@
         </div>
     </div>
 </footer>
-
+<script src="<?php echo Routes::js('serviciosTienda.js'); ?>"></script>
+<script src="<?php echo Routes::js('resposiveTienda.js'); ?>"></script>
+<script src="<?= Routes::js('smoothScroll.js'); ?>"></script>
+<script src="<?= Routes::js('scrollPortada.js'); ?>"></script>
+<script src="<?= Routes::js('scrollCotizar.js'); ?>"></script>
+<script src="<?= Routes::js('volverPortada.js'); ?>"></script>
+<script src="<?= Routes::js('blogTiendaScrollt.js'); ?>"></script>
 </body>
 </html>
