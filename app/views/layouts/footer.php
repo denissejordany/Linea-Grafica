@@ -8,10 +8,16 @@
 <footer class="footer">
     <div class="footer-container">
 
-        <!-- Enlaces rápidos -->
-        <div class="footer-column">
+        <!-- Encabezados -->
+        <div class="footer-headings">
             <h4 class="footer-title">Enlaces rápidos</h4>
+            <h4 class="footer-title">Contáctanos</h4>
+        </div>
 
+        <!-- Grilla de filas alineadas -->
+        <div class="footer-grid">
+
+            <!-- Columna Enlaces -->
             <ul class="footer-links">
                 <li>
                     <a href="<?php echo Routes::url('acerca'); ?>">
@@ -39,18 +45,10 @@
                         Preguntas frecuentes
                     </a>
                 </li>
+                
             </ul>
 
-            <p class="footer-copy">
-                ©2025 Línea Gráfica. <br>
-                Todos los derechos reservados
-            </p>
-        </div>
-
-        <!-- Contacto -->
-        <div class="footer-column">
-            <h4 class="footer-title">Contáctanos</h4>
-
+            <!-- Columna Contacto -->
             <ul class="footer-contact">
                 <li>
                     <span class="icon">
@@ -73,9 +71,13 @@
                     ventas@lineagraficaxxi.com
                 </li>
             </ul>
+ <p class="footer-copy">
+            ©2025 Línea Gráfica. Todos los derechos reservados
+        </p>
         </div>
     </div>
 </footer>
+
 
 <script src="<?php echo Routes::js('main.js'); ?>"></script>
 <script src="<?php echo Routes::js('inicio.js'); ?>"></script>

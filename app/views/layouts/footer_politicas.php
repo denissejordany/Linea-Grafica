@@ -1,11 +1,17 @@
 </main>
 
-<footer class="footer">
+<footer class="footer footer-politicas">
     <div class="footer-container">
 
-      <div class="footer-column">
+        <!-- Encabezados (MISMA ESTRUCTURA) -->
+        <div class="footer-headings">
             <h4 class="footer-title">Contáctanos</h4>
+        </div>
 
+        <!-- Grid (MISMA ESTRUCTURA, una sola columna) -->
+        <div class="footer-grid">
+
+            <!-- Columna Contacto -->
             <ul class="footer-contact">
                 <li>
                     <span class="icon">
@@ -28,8 +34,14 @@
                     ventas@lineagraficaxxi.com
                 </li>
             </ul>
+
+            <!-- Copyright (MISMA POSICIÓN) -->
+            <p class="footer-copy">
+                ©2025 Línea Gráfica. Todos los derechos reservados
+            </p>
+
         </div>
-        </div>
+    </div>
 </footer>
 
 </body>
