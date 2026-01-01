@@ -13,6 +13,9 @@ class TiendaController
             'global/header.css',
             'pages/tienda/tienda.css',
             'pages/tienda/tienda-contenedor.css',
+            'pages/tienda/tienda-carruselRes.css',
+            'pages/tienda/tienda-contacto.css',
+            'pages/tienda/tienda-encuentranos.css',
             'global/footer.css'
         ];
 

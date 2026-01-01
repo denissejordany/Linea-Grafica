@@ -1,0 +1,126 @@
+/* =========================
+   CONTÁCTANOS
+========================= */
+
+.contact-section {
+    max-width: 600px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-title span {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.contact-text {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-group label {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;      /* 👈 fuerza alineación izquierda */
+    align-self: flex-start; /* 👈 evita centrado por flex */
+}
+
+.contact-group label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* INPUTS */
+.contact-group input,
+.contact-group textarea {
+    border: 2px solid #c40000;
+    border-radius: 24px;
+    padding: 14px 18px;
+    font-size: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-group input:focus,
+.contact-group textarea:focus {
+    border-color: #ff0000;
+}
+
+/* BOTONES */
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.contact-btn {
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Enviar */
+.contact-btn-send {
+    background: #c40000;
+    color: #fff;
+}
+
+/* Volver */
+.contact-btn-back {
+    background: transparent;
+    border: 2px solid #c40000;
+    color: #c40000;
+}
+
+/* Hover */
+.contact-btn-send:hover {
+    background: #a80000;
+}
+
+.contact-btn-back:hover {
+    background: #c40000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    .contact-title span {
+        font-size: 22px;
+    }
+
+    .contact-text {
+        font-size: 14px;
+    }
+
+    .contact-actions {
+        flex-direction: column;
+    }
+
+    .contact-btn {
+        width: 100%;
+    }
+}

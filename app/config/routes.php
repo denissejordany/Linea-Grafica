@@ -33,6 +33,6 @@ class Routes {
     }
 
     public static function url($route = '') {
-        return self::$base . "?route=" . $route;
+    return self::$base . $route;
     }
 }

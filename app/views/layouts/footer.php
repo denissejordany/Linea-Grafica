@@ -1,3 +1,8 @@
+<link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
 </main>
 
 <footer class="footer">
@@ -77,6 +82,11 @@
 <script src="<?php echo Routes::js('main.js'); ?>"></script>
 <script src="<?php echo Routes::js('inicio.js'); ?>"></script>
 <script src="<?php echo Routes::js('serviciosTienda.js'); ?>"></script>
+<script src="<?php echo Routes::js('resposiveTienda.js'); ?>"></script>
+<script src="<?= Routes::js('smoothScroll.js'); ?>"></script>
+<script src="<?= Routes::js('scrollPortada.js'); ?>"></script>
+<script src="<?= Routes::js('scrollCotizar.js'); ?>"></script>
+<script src="<?= Routes::js('volverPortada.js'); ?>"></script>
 <script src="<?php echo Routes::js('blog.js'); ?>"></script>
 </body>
 </html>
