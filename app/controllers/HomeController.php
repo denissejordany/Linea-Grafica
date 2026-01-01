@@ -7,8 +7,7 @@ class HomeController
          $title = 'Inicio';
         $pageStyles = [
                        
-            'global/reset.css',
-            'global/typography.css',
+            'global/reset.css',         
             'global/header.css',
             'global/footer.css',
             'pages/inicio.css',

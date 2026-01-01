@@ -299,8 +299,9 @@
 
                     <button class="carousel-btn next">❯</button>
                 </div>
-
+               <div class="mobile-wrapper">
                 <a href="#" class="mobile-btn">Cotizar ahora</a>
+              </div>
             </article>
 
             <!-- EDITORIAL -->
@@ -340,8 +341,9 @@
 
                     <button class="carousel-btn next">❯</button>
                 </div>
-
+              <div class="mobile-wrapper">
                 <a href="#" class="mobile-btn">Cotizar ahora</a>
+              </div>
             </article>
 
             <!-- ESPECIALES -->
@@ -381,9 +383,9 @@
 
                     <button class="carousel-btn next">❯</button>
                 </div>
-
+ <div class="mobile-wrapper">
                 <a href="#" class="mobile-btn">Cotizar ahora</a>
-
+ </div>
             </article>
 
         </section>

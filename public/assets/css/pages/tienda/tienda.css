@@ -3,7 +3,8 @@
 ============================ */
 
 .info-section {
-   
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
     margin: 0; 
     text-align: center;
 }
@@ -20,7 +21,8 @@
     font-size: 32px;
     font-weight: 700;
     text-align: center;
-
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
     padding: 26px 0;
     margin-bottom: 24px;
 }
@@ -63,7 +65,8 @@
     max-width: 360px;     /* 🔥 controla el ancho del texto */
     margin: 0;
     padding: 0;
-
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
     font-size: 30px;
     line-height: 1.6;
     color: #333;
@@ -103,7 +106,8 @@
     display: inline-flex;
     align-items: center;
     gap: 12px;
-
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
     font-size: 30px;          /* 🔥 MISMO tamaño que info-lines */
     font-weight: 600;
     line-height: 1.2;
@@ -170,7 +174,8 @@
 .card-title {
     background: #c40000;
     color: #fff;
-
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
     font-size: 20px;
     font-weight: 700;
 
@@ -194,6 +199,8 @@
     padding-left: 20px;
     margin-bottom: 20px;
     text-align: left;
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
 }
 
 .card-list li {
@@ -211,7 +218,8 @@
     font-weight: 600;
     color: #000;
     text-decoration: none;
-
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
     padding: 10px 0;
 }
 

@@ -27,7 +27,8 @@
 .service-title {
     background: #c40000;
     color: #fff;
-
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
     font-size: 22px;
     font-weight: 700;
 
