@@ -6,10 +6,12 @@ class HomeController
     {
          $title = 'Inicio';
         $pageStyles = [
-            
-            'pages/inicio.css',
+                       
+            'global/reset.css',
+            'global/typography.css',
             'global/header.css',
-            'global/footer.css'
+            'global/footer.css',
+            'pages/inicio.css',
         ];
 
         require_once "app/views/layouts/header.php";

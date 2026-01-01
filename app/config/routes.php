@@ -3,7 +3,7 @@
 class Routes {
 
     // Cambia aquí si tu proyecto está en una carpeta
-    private static $base = '/weblinea/';
+    private static $base = '/linea_grafica/';
 
     public static function base() {
         return self::$base;
@@ -22,6 +22,10 @@ class Routes {
     }
      public static function pdf($file = '') {
         return self::$base . "public/assets/pdf/" . $file;
+    }
+
+    public static function imgTienda($file = '') {
+        return self::$base . "public/assets/img/tienda/" . $file;
     }
 
     public static function asset($path = '') {
