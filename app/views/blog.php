@@ -341,7 +341,9 @@
 </section>
 
 <div class="cotizar-wrapper">
-    <a href="#cotizar" class="btn-cotizar">Cotizar ahora</a>
+    <a href="<?= Routes::url('tienda'); ?>#cotizar" class="btn-cotizar">
+        Cotizar ahora
+    </a>
 </div><br><br>
 <!---------- PREGUNTAS FRECUENTES-------->
 <div class="faq-wrapper">
@@ -365,7 +367,7 @@
                         o evento en particular.
                     </p>
 
-                    <button class="faq-highlight-btn-text" type="button">
+                    <button class="faq-highlight-btn-text" type="button" data-target="brochure-link">
                         <img src="<?php echo Routes::img('blog/bt_conoce.png'); ?>" alt="" class="faq-highlight-icon">
                         Conoce más
 
@@ -392,7 +394,7 @@
                         es lo que determina el valor y la satisfacción del cliente a largo plazo.
                     </p>
 
-                    <button class="faq-highlight-btn-text" type="button">
+                    <button class="faq-highlight-btn-text" type="button" data-target="calidad-precio">
                         <img src="<?php echo Routes::img('blog/bt_conoce.png'); ?>" alt="" class="faq-highlight-icon">
                         Conoce más
 
@@ -419,7 +421,7 @@
 
                     </p>
 
-                    <button class="faq-highlight-btn-text" type="button">
+                    <button class="faq-highlight-btn-text" type="button" data-target="rgb-cmyk">
                         <img src="<?php echo Routes::img('blog/bt_conoce.png'); ?>" alt="" class="faq-highlight-icon">
                         Conoce más
 
@@ -433,7 +435,7 @@
 </div>
 
 <!----------¿QUÉ ES UN BROCHURE?-------->
-<h2 class="info-title"> <span>¿QUÉ ES UN BROCHURE?</span> </h2>
+<h2 class="info-title" id="brochure-link"> <span>¿QUÉ ES UN BROCHURE?</span> </h2>
 <section class="brochure-info">
 
     <!-- BLOQUE SUPERIOR -->
@@ -470,11 +472,13 @@
     </div>
 </section>
 <div class="cotizar-wrapper">
-    <a href="#cotizar" class="btn-cotizar">Cotizar ahora</a>
+    <a href="<?= Routes::url('tienda'); ?>#cotizar" class="btn-cotizar">
+        Cotizar ahora
+    </a>
 </div><br><br>
 
 <!----------CONOCE A LÍNEA GRÁFICA-------->
-<h2 class="info-title">
+<h2 class="info-title" id="calidad-precio">
     <span>¿CALIDAD O PRECIO?</span>
 </h2>
 <section class="calidad-info">
@@ -522,10 +526,12 @@
     </div>
 </section>
 <div class="cotizar-wrapper">
-    <a href="#cotizar" class="btn-cotizar">Cotizar ahora</a>
+    <a href="<?= Routes::url('tienda'); ?>#cotizar" class="btn-cotizar">
+        Cotizar ahora
+    </a>
 </div><br><br>
 <!----------¿LOS TRABAJOS SON MEJOR EN RGB o CMYK?-------->
-<h2 class="info-title">
+<h2 class="info-title" id="rgb-cmyk">
     <span>¿LOS TRABAJOS SON MEJOR EN RGB o CMYK?</span>
 </h2>
 <section class="trabajos-info">
@@ -566,6 +572,8 @@
     </div>
 </section>
 <div class="cotizar-wrapper">
-    <a href="#cotizar" class="btn-cotizar">Cotizar ahora</a>
+    <a href="<?= Routes::url('tienda'); ?>#cotizar" class="btn-cotizar">
+        Cotizar ahora
+    </a>
 </div>
 <br><br><br>
