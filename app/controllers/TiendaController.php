@@ -8,15 +8,14 @@ class TiendaController
          $title = 'Tienda';
         $pageStyles = [
 
-            'global/reset.css',
-            'global/typography.css',
+            'global/reset.css',           
             'global/header.css',
             'pages/tienda/tienda.css',
             'pages/tienda/tienda-contenedor.css',
             'pages/tienda/tienda-carruselRes.css',
             'pages/tienda/tienda-contacto.css',
             'pages/tienda/tienda-encuentranos.css',
-            'global/footer.css'
+            'global/footer_tienda.css'
         ];
 
         require_once "app/views/layouts/header.php";

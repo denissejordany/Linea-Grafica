@@ -3,7 +3,6 @@
     display: none;
 }
 
-
 .mobile-service {
     margin-bottom: 40px;
 }
@@ -12,7 +11,8 @@
     margin-left: calc(50% - 50vw);
     margin-right: calc(37% - 37vw);
     padding: 26px 0;
-
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
     background: #c40000;
     color: #fff;
 
@@ -28,7 +28,7 @@
     gap: 10px;
 }
 
-/* 👇 ESTE ES EL RECORTE REAL */
+
 .carousel-viewport {
     width: 100%;
     overflow: hidden;
@@ -44,6 +44,8 @@
     min-width: 100%;
     flex-shrink: 0;             /* 🔥 evita que se encojan */
     text-align: left;
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
 }
 
 .carousel-item img {
@@ -64,14 +66,24 @@
 .mobile-btn {
     display: block;
     margin: 16px auto 0;
-    background: #c40000;
+    background: #000000;
     color: #fff;
-    padding: 12px 24px;
-    border-radius: 30px;
+    padding: 10px 24px;
+    border-radius: 12px;
     text-align: center;
-    font-weight: 600;
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+    
 }
 
+.mobile-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
 
 /* Mobile */
 @media (max-width: 768px) {

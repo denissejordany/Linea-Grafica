@@ -31,6 +31,8 @@
     display: flex;
     flex-direction: column;
     gap: 26px;
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
 }
 
 /* ITEM */
