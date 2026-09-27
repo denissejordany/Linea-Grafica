@@ -109,7 +109,7 @@ html, body {
     font-weight: 700;
     text-align: center;
 font-family: 'Made Okine Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     padding: 26px 0;
     margin-bottom: 24px;
 }
@@ -348,11 +348,15 @@ font-family: 'Made Okine Sans', sans-serif;
     justify-items: center;
 }
 
-.clientes-grid img:nth-last-child(2),
-.clientes-grid img:last-child {
-    transform: translateX(100%);
+.clientes-grid--final {
+    margin-top: 40px;
 }
-
+.clientes-grid--final {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 420px;      /* ancho del bloque de 2 logos */
+    margin: 40px auto 0;  /* centrado */
+    gap: 40px 30px;
+}
 
 .clientes-grid img {
     max-width: 190px;
@@ -362,7 +366,13 @@ font-family: 'Made Okine Sans', sans-serif;
     filter: grayscale(0);
 }
 @media (max-width: 768px) {
-
+    
+.clientes-grid--final {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 300px;
+        margin: 0 auto;
+        gap: 28px 20px;
+    }
     .clientes {
         padding: 40px 16px;
     }

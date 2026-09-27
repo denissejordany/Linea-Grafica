@@ -1,10 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diseñamos líneas gráficas profesionales que fortalecen la identidad visual de tu marca. Logotipos, colores, tipografías y aplicaciones coherentes.">
+
     <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="icon" href="<?php echo Routes::img('header/linea.ico'); ?>">
     <title><?php echo isset($title) ? $title . ' | Linea Grafica' : 'Mi sitio'; ?></title>
 
     <?php if (!empty($pageStyles)): ?>

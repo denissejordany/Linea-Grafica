@@ -73,14 +73,19 @@
 }
 
 .service-item img {
-    width: 100%;
-    max-width: 220px;
-    margin-bottom: 16px;
+    width: 240px;
+    height: 200px;
+    object-fit: contain;
+    background-color: #edecec;
+    border-radius: 16px;
+    padding: 12px;
+    box-sizing: border-box;
 }
 
 .service-item ul {
-    list-style: disc;
-    padding-left: 20px;
+    width: 248px;     
+    margin: 12px auto 0;   
+    padding-left: 18px;    
     text-align: left;
 }
 
@@ -93,23 +98,26 @@
    ACTION
 ============================ */
 
-.service-action {
+.service-action{
+     width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    margin-top: 32px;
 }
 
 .service-btn {
     display: inline-block;
     padding: 14px 36px;
-
-    background: #c40000;
+    background: #000000;
     color: #fff;
     text-decoration: none;
-
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
     font-size: 22px;
     font-weight: 600;
     border-radius: 30px;
-
-    transition: background 0.3s ease;
+    transition: background-color 0.25s ease, transform 0.2s ease;
 }
 
 .service-btn:hover {

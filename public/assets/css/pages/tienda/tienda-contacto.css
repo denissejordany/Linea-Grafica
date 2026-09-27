@@ -93,7 +93,7 @@
 
 /* Enviar */
 .contact-btn-send {
-    background: #c40000;
+    background: #000000;
     color: #fff;
 }
 
@@ -101,7 +101,7 @@
 .contact-btn-back {
     background: transparent;
     border: 2px solid #c40000;
-    color: #c40000;
+    color: #000000;
 }
 
 /* Hover */
@@ -132,3 +132,48 @@
         width: 100%;
     }
 }
+.contact-alert {
+    display: none;
+    max-width: 620px;
+    margin: 24px auto 0;
+    padding: 18px 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    font-family: inherit;
+}
+
+.contact-alert-success {
+    background: #e9f7ef;
+    border-left: 6px solid #2e7d32;
+    color: #1b5e20;
+}
+
+.contact-alert-content strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.contact-alert-content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contact-alert-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    color: #1b5e20;
+}
+
+.contact-alert-close:hover {
+    opacity: 0.7;
+}
+

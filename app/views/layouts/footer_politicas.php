@@ -43,6 +43,6 @@
         </div>
     </div>
 </footer>
-
+<script src="<?php echo Routes::js('main.js'); ?>"></script>
 </body>
 </html>

@@ -80,7 +80,7 @@
 
                 <div class="card-body">
                     <div class="card-image">
-                        <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_2.png'); ?>" alt="Producción">
+                        <img src="<?= Routes::imgTienda('carrusel-tienda-10.png'); ?>" alt="Producción">
                     </div>
 
                     <ul class="card-list">
@@ -140,28 +140,28 @@
 
                 <!-- ITEM 1 -->
                 <div class="service-item">
-                    <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_1.png'); ?>" alt="">
+                    <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_1.png'); ?>" alt="Volantes">
                     <ul>
-                        <li>Certificados</li>
-                        <li>Diplomas</li>
+                        <li>Volantes, díptico y trípticos.</li>
+                        <li>Stickers personalizados en couche y polipropileno para equipos de frío.</li>
                     </ul>
                 </div>
 
                 <!-- ITEM 2 -->
                 <div class="service-item">
-                    <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_2.png'); ?>" alt="">
+                    <img src="<?= Routes::imgTienda('carrusel-tienda-2.png'); ?>" alt="Paletas">
                     <ul>
-                        <li>Certificados</li>
-                        <li>Diplomas</li>
+                        <li>Paletas,  collarines y cadenetas.</li>
+                        <li>Bolsas couche.</li>
                     </ul>
                 </div>
 
                 <!-- ITEM 3 -->
                 <div class="service-item">
-                    <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_3.png'); ?>" alt="">
+                    <img src="<?= Routes::imgTienda('carrusel-tienda-3.png'); ?>" alt="Cupones">
                     <ul>
-                        <li>Certificados</li>
-                        <li>Diplomas</li>
+                        <li>Cupones, table tent, banners.</li>
+                        
                     </ul>
                 </div>
 
@@ -186,7 +186,7 @@
 
             <div class="service-content">
                 <div class="service-item">
-                    <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_2.png'); ?>" alt="">
+                    <img src="<?= Routes::imgTienda('carrusel-tienda-4.png'); ?>" alt="Certificados">
                     <ul>
                         <li>Certificados en papel seguridad</li>
                         <li>Diplomas con tinta especial</li>
@@ -194,17 +194,17 @@
                 </div>
 
                 <div class="service-item">
-                    <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_3.png'); ?>" alt="">
+                    <img src="<?= Routes::imgTienda('carrusel-tienda-5.png'); ?>" alt="Brochure">
                     <ul>
+                        <li>Brochure</li>
                         <li>Libros académicos</li>
-                        <li>Catálogos</li>
                     </ul>
                 </div>
 
                 <div class="service-item">
-                    <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_1.png'); ?>" alt="">
+                    <img src="<?= Routes::imgTienda('carrusel-tienda-6.png'); ?>" alt="Catálogos">
                     <ul>
-                        <li>Brochures</li>
+                        <li>Catálogos</li>
                     </ul>
                 </div>
             </div>
@@ -227,26 +227,26 @@
 
             <div class="service-content">
                 <div class="service-item">
-                    <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_3.png'); ?>" alt="">
+                    <img src="<?= Routes::imgTienda('carrusel-tienda-7.png'); ?>" alt="Display">
                     <ul>
-                        <li>Vibrines para góndolas</li>
-                        <li>Ánforas</li>
+                        <li>Display.</li>
+                       
                     </ul>
                 </div>
 
                 <div class="service-item">
-                    <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_1.png'); ?>" alt="">
+                    <img src="<?= Routes::imgTienda('carrusel-tienda-8.png'); ?>" alt="Cajas">
                     <ul>
-                        <li>Cajas imantadas</li>
-                        <li>Tapa dura</li>
+                        <li>Cajas personalizadas en duplex, tapa dura con cierre imantado.</li>
+                        <li>Cuadernos personalizados.</li>
                     </ul>
                 </div>
 
                 <div class="service-item">
-                    <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_2.png'); ?>" alt="">
+                    <img src="<?= Routes::imgTienda('carrusel-tienda-9.png'); ?>" alt="Vibrines">
                     <ul>
-                        <li>Cuadernos personalizados</li>
-                        <li>Display</li>
+                        <li>Vibrines para góndolas.</li>
+                        <li>Ánforas.</li>
                     </ul>
                 </div>
             </div>
@@ -270,28 +270,25 @@
                     <div class="carousel-viewport">
                         <div class="carousel-track-tienda">
                             <div class="carousel-item">
-                                <img src="<?= Routes::imgTienda('carrusel-tienda-1.png'); ?>">
+                                <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_1.png'); ?>"alt="Volantes">
                                 <ul>
-                                    <li>Paletas,  collarines y cadenetas.</li>
-                                    <li>Bolsas couche.</li>
-                                    <li>Cupones, table tent, banners.</li>
+                        <li>Volantes, díptico y trípticos.</li>
+                        <li>Stickers personalizados en couche y polipropileno para equipos de frío.</li>
                                 </ul>
                             </div>
 
                             <div class="carousel-item">
-                                <img src="<?= Routes::imgTienda('carrusel-tienda-2.png'); ?>">
+                                <img src="<?= Routes::imgTienda('carrusel-tienda-2.png'); ?>"alt="Volantes">
                                 <ul>
-                                    <li>Banners</li>
-                                    <li>Cupones</li>
+                        <li>Paletas,  collarines y cadenetas.</li>
+                        <li>Bolsas couche.</li>
                                 </ul>
                             </div>
 
                             <div class="carousel-item">
-                                <img src="<?= Routes::imgTienda('carrusel-tienda-3.png'); ?>">
+                                <img src="<?= Routes::imgTienda('carrusel-tienda-3.png'); ?>"alt="Cupones">
                                 <ul>
-                                    <li>Banners</li>
-                                    <li>Cupones</li>
-                                    <li>p</li>
+                           <li>Cupones, table tent, banners.</li>
                                 </ul>
                             </div>
                         </div>
@@ -314,26 +311,25 @@
                     <div class="carousel-viewport">
                         <div class="carousel-track-tienda">
                             <div class="carousel-item">
-                                <img src="<?= Routes::imgTienda('carrusel-tienda-2.png'); ?>">
+                                <img src="<?= Routes::imgTienda('carrusel-tienda-4.png'); ?>"alt="Certificados">
                                 <ul>
-                                    <li>Brochure</li>
-                                    <li>Libros académicos</li>
+                        <li>Certificados en papel seguridad</li>
+                        <li>Diplomas con tinta especial</li>
                                 </ul>
                             </div>
 
                             <div class="carousel-item">
-                                <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_2.png'); ?>">
+                                <img src="<?= Routes::imgTienda('carrusel-tienda-5.png'); ?>"alt="Brochure">
                                 <ul>
-                                    <li>Banners</li>
-                                    <li>Cupones</li>
+                        <li>Brochure</li>
+                        <li>Libros académicos</li>
                                 </ul>
                             </div>
 
                             <div class="carousel-item">
-                                <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_2.png'); ?>">
+                                <img src="<?= Routes::imgTienda('carrusel-tienda-6.png'); ?>"alt="Catálogos">
                                 <ul>
-                                    <li>Banners</li>
-                                    <li>Cupones</li>
+                        <li>Catálogos</li>
                                 </ul>
                             </div>
                         </div>
@@ -356,26 +352,25 @@
                     <div class="carousel-viewport">
                         <div class="carousel-track-tienda">
                             <div class="carousel-item">
-                                <img src="<?= Routes::imgTienda('carrusel-tienda-2.png'); ?>">
+                                <img src="<?= Routes::imgTienda('carrusel-tienda-7.png'); ?>"alt="Display">
                                 <ul>
-                                    <li>Cajas personalizadas en duplex, tapa dura con <br> cierre imantado.</li>
-                                    <li>Cuadernos personalizados.</li>
+                        <li>Display.</li>
                                 </ul>
                             </div>
 
                             <div class="carousel-item">
-                                <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_2.png'); ?>">
+                                <img src="<?= Routes::imgTienda('carrusel-tienda-8.png'); ?>"alt="Cajas">
                                 <ul>
-                                    <li>Banners</li>
-                                    <li>Cupones</li>
+                        <li>Cajas personalizadas en duplex, tapa dura con cierre imantado.</li>
+                        <li>Cuadernos personalizados.</li>
                                 </ul>
                             </div>
 
                             <div class="carousel-item">
-                                <img src="<?= Routes::imgTienda('Catalogo_Linea_Grafica_2.png'); ?>">
+                                <img src="<?= Routes::imgTienda('carrusel-tienda-9.png'); ?>"alt="Vibrines">
                                 <ul>
-                                    <li>Banners</li>
-                                    <li>Cupones</li>
+                        <li>Vibrines para góndolas.</li>
+                        <li>Ánforas.</li>
                                 </ul>
                             </div>
                         </div>
@@ -397,75 +392,89 @@
 
         <section class="contact-section">
 
-        <div class="contact-text">
-            <p>
-                ¿Listo para llevar tu marca al siguiente nivel?<br>
-                ¡Que el cambio sea hoy!
-            </p>
-        </div>
-
-        <form class="contact-form">
-
-            <div class="contact-group">
-                <label for="contact-name">Nombre completo</label>
-                <input 
-                    type="text" 
-                    id="contact-name" 
-                    name="name" 
-                    placeholder="Ingresa tu nombre completo"
-                    required
-                >
+            <div class="contact-text">
+                <p>
+                    ¿Listo para llevar tu marca al siguiente nivel?<br>
+                    ¡Que el cambio sea hoy!
+                </p>
             </div>
+        
+           <form class="contact-form" id="contactForm" method="POST" action="/linea_grafica/enviar">
+        <div class="contact-alert contact-alert-success" id="contactAlert" aria-live="polite">
+    <div class="contact-alert-content">
+        <strong>Mensaje enviado correctamente</strong>
+        <p>Gracias por contactarnos. Nuestro equipo se comunicará contigo a la brevedad.</p>
+    </div>
+    <button type="button" class="contact-alert-close" aria-label="Cerrar alerta">×</button>
+</div>
+                <div class="contact-group">
+                    <label for="contact-name">Nombre completo</label>
+                    <input 
+                        type="text" 
+                        id="contact-name" 
+                        name="name" 
+                        placeholder="Ingresa tu nombre completo"
+                        required
+                    >
+                </div>
+        
+                <div class="contact-group">
+                    <label for="contact-email">Correo electrónico</label>
+                    <input 
+                        type="email" 
+                        id="contact-email" 
+                        name="email" 
+                        placeholder="correo@ejemplo.com"
+                        required
+                    >
+                </div>
+        
+                <div class="contact-group">
+                    <label for="contact-phone">Número de celular</label>
+                    <input 
+                         type="tel"
+    id="contact-phone"
+    name="phone"
+    placeholder="987 654 321"
+    inputmode="numeric"
+    pattern="[0-9 ]+"
+    minlength="6"
+    maxlength="12"
+    required
+                    >
+                </div>
+        
+                <div class="contact-group">
+                    <label for="contact-message">Mensaje</label>
+                    <textarea 
+                        id="contact-message" 
+                        name="message" 
+                        placeholder="Escribe tu mensaje aquí..."
+                        rows="4"
+                        required
+                    ></textarea>
+                </div>
+        
 
-            <div class="contact-group">
-                <label for="contact-email">Correo electrónico</label>
-                <input 
-                    type="email" 
-                    id="contact-email" 
-                    name="email" 
-                    placeholder="correo@ejemplo.com"
-                    required
-                >
-            </div>
 
-            <div class="contact-group">
-                <label for="contact-phone">Número de celular</label>
-                <input 
-                    type="tel" 
-                    id="contact-phone" 
-                    name="phone" 
-                    placeholder="987 654 321"
-                    required
-                >
-            </div>
+        
+                <div class="contact-actions">
+                    <button type="submit" class="contact-btn contact-btn-send">
+                        Enviar mensaje
+                    </button>
+        
+                    <button type="button" class="contact-btn contact-btn-back">
+                        Volver
+                    </button>
+                </div>
+        
+            </form>
+        
+        </section>
 
-            <div class="contact-group">
-                <label for="contact-message">Mensaje</label>
-                <textarea 
-                    id="contact-message" 
-                    name="message" 
-                    placeholder="Escribe tu mensaje aquí..."
-                    rows="4"
-                    required
-                ></textarea>
-            </div>
-
-            <div class="contact-actions">
-                <button type="submit" class="contact-btn contact-btn-send">
-                    Enviar mensaje
-                </button>
-
-                <button type="button" class="contact-btn contact-btn-back">
-                    Volver
-                </button>
-            </div>
-
-        </form>
-
-</section>
 
     <h2 class="info-title">
-        <span>ENCUENTRANOS</span>
+        <span>ENCUÉNTRANOS</span>
     </h2>
 
     <section class="findus-section">
@@ -525,4 +534,69 @@
     </section>
 
 </section>
+<script>
+const form = document.getElementById('contactForm');
+const alertBox = document.getElementById('contactAlert');
+const closeBtn = document.querySelector('.contact-alert-close');
+
+if (form) {
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        fetch('/linea_grafica/enviar', {
+            method: 'POST',
+            body: new FormData(form)
+        })
+        .then(res => {
+            if (!res.ok) throw new Error('Error en la respuesta');
+            return res.json();
+        })
+        .then(data => {
+            if (data.success) {
+                alertBox.style.display = 'block';
+                form.reset();
+            } else {
+                alert('Ocurrió un error al enviar el mensaje.');
+            }
+        })
+        .catch(() => {
+            alert('Error de conexión. Inténtalo nuevamente.');
+        });
+    });
+}
+
+if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+        alertBox.style.display = 'none';
+    });
+}
+</script>
+
+
+
+<!-- ENVIAR CORREO DE EMPRESAS CON EMAILJS
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function () {
+    emailjs.init("UzU-7md04TPLpOxyx"); // tu Public Key
+})();
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_6fx5h06",     // NUEVO servicio SMTP
+        "template_mgfemvj",    // template de contacto/ventas
+        this
+    ).then(() => {
+        alert("✅ Mensaje enviado correctamente");
+        this.reset();
+    }).catch(error => {
+        alert("❌ Error al enviar: " + JSON.stringify(error));
+        console.error(error);
+    });
+});
+</script>
+-->
 
