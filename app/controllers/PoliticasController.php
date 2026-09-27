@@ -3,7 +3,7 @@
 class PoliticasController{
     public function showPolicies()
     {
-         $title = 'Politicas';
+        $title = 'Politicas';
         $pageStyles = [
             'global/header.css',
             'pages/politicas.css',

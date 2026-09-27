@@ -84,6 +84,8 @@
 <script src="<?php echo Routes::js('blog.js'); ?>"></script>
 <script src="<?= Routes::js('blogCotizar.js'); ?>"></script>
 <script src="<?= Routes::js('scrollFaq.js'); ?>"></script>
+<script src="<?= Routes::js('scrollFotProyect.js'); ?>"></script>
 <script src="<?= Routes::js('smoothScroll.js'); ?>"></script>
+<script src="<?= Routes::js('preguntasFromInicio.js'); ?>"></script>
 </body>
 </html>

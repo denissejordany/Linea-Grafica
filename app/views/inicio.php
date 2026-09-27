@@ -110,8 +110,11 @@
         <img src="<?php echo Routes::img('inicio/cliente7.png'); ?>" alt="Trebol">
         <img src="<?php echo Routes::img('inicio/cliente8.png'); ?>" alt="AAP">
         <img src="<?php echo Routes::img('inicio/cliente9.png'); ?>" alt="Clinica Loayza">
-        <img src="<?php echo Routes::img('inicio/cliente10.png'); ?>" alt="Financiera Confianza">
-        <img src="<?php echo Routes::img('inicio/cliente11.png'); ?>" alt="Layconsa">
+   
+    </div>
+     <div class="clientes-grid clientes-grid--final">
+       <img src="<?php echo Routes::img('inicio/cliente10.png'); ?>" alt="Financiera Confianza">
+       <img src="<?php echo Routes::img('inicio/cliente11.png'); ?>" alt="Layconsa">
     </div>
 </section>
 

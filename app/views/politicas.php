@@ -3,6 +3,19 @@
         <span>NUESTRAS POLITICAS</span>
    </h2>
    <section class="politicas">
+        <div class="politica-item">
+        <span>POLITICA DE DERECHOS HUMANOS</span>
+        <a href="<?php echo Routes::pdf('POLITICA DE DERECHOS HUMANOS.pdf'); ?>" 
+            target="_blank"
+            class="politica-link">
+
+        Descargar ahora
+        <img 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
+            alt="Descargar PDF"
+            class="politica-icon">
+            </a>
+    </div>
     <div class="politica-item">
         <span>POLITICA DE CONSUMO DE ENERGIA</span>
         <a href="<?php echo Routes::pdf('POLITICA_DE_CONSUMO_DE_ENERGIA.pdf'); ?>" 
@@ -11,7 +24,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -25,7 +38,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -39,7 +52,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -53,7 +66,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -67,7 +80,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -81,7 +94,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -95,7 +108,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -109,7 +122,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -123,7 +136,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -137,7 +150,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -151,7 +164,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -165,7 +178,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -179,7 +192,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -193,7 +206,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -207,7 +220,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -221,7 +234,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>
@@ -235,7 +248,7 @@
 
         Descargar ahora
         <img 
-            src="<?php echo Routes::img('blog/link.png'); ?>" 
+            src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 
             alt="Descargar PDF"
             class="politica-icon">
             </a>

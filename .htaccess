@@ -1,4 +1,8 @@
 RewriteEngine On
+RewriteBase /linea_grafica/
+
+# Endpoint del formulario
+RewriteRule ^enviar/?$ app/views/enviar.php [L,QSA]
 
 # Si es archivo o carpeta real, no tocar
 RewriteCond %{REQUEST_FILENAME} -f [OR]

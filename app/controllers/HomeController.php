@@ -4,7 +4,7 @@ class HomeController
 {
     public function showHome()
     {
-         $title = 'Inicio';
+        $title = 'Inicio';
         $pageStyles = [
                        
             'global/reset.css',         
