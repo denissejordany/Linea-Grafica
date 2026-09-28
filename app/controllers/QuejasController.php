@@ -7,6 +7,7 @@ class QuejasController{
         $pageStyles = [
             'global/header.css',
             'pages/quejas.css',
+            'pages/modal.css',
             'global/footer_politicas.css'
         ];
 
