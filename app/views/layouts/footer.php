@@ -45,6 +45,14 @@
                         Preguntas frecuentes
                     </a>
                 </li>
+                 <li>
+                    <a href="<?php echo Routes::url('quejas'); ?>">
+                        <span class="icon">
+                            <img src="<?php echo Routes::img('footer/quejas.png'); ?>" alt="">
+                        </span>
+                        Gestión de reclamos, quejas y denuncias
+                    </a>
+                </li>
                 
             </ul>
 

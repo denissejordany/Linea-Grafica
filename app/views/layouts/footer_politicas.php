@@ -44,5 +44,6 @@
     </div>
 </footer>
 <script src="<?php echo Routes::js('main.js'); ?>"></script>
+<script src="<?php echo Routes::js('quejas.js'); ?>"></script>
 </body>
 </html>
