@@ -64,18 +64,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 5. ENVÍO DE FORMULARIOS
-    const forms = document.querySelectorAll('.custom-form');
-
-    forms.forEach((form) => {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const formData = new FormData(form);
-            const data = Object.fromEntries(formData.entries());
-
-            console.log('Enviado desde:', form.id, data);
-            alert('Formulario enviado correctamente.');
-        });
-    });
-
 });

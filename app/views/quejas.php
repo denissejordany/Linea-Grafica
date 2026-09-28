@@ -13,7 +13,8 @@
                 <span class="accordion-title">Formulario para sugerencias y consultas</span>
             </summary>
             <div class="accordion-content">
-                <form class="custom-form" id="form-sugerencias">
+                <form class="custom-form" id="form-sugerencias" enctype="multipart/form-data">
+                    <input type="hidden" name="tipo_formulario" value="Sugerencias">
                     <div class="form-group">
                         <label for="nombre-sug">Nombre y Apellido (Obligatorio)*</label>
                         <input type="text" id="nombre-sug" name="nombre" required>
@@ -67,7 +68,8 @@
                 <span class="accordion-title">Formulario de Reclamos / Solicitudes</span>
             </summary>
             <div class="accordion-content">
-                <form class="custom-form" id="form-reclamos">
+                <form class="custom-form" id="form-reclamos" enctype="multipart/form-data">
+                    <input type="hidden" name="tipo_formulario" value="Reclamos">
                     <div class="form-group">
                         <label for="nombre-rec">Nombre y Apellido (Obligatorio)*</label>
                         <input type="text" id="nombre-rec" name="nombre" required>
@@ -154,7 +156,8 @@
             “Este canal se establece para ofrecer soluciones a los informes de prácticas inapropiadas que infrinjan las normas establecidas en línea gráfica”
         </p>
 
-        <form class="custom-form" id="form-persona-natural">
+        <form class="custom-form" id="form-persona-natural" enctype="multipart/form-data">
+            <input type="hidden" name="tipo_formulario" value="Denuncias">
             <!-- 1. Datos Personales -->
             <div class="form-group">
                 <label for="nombre-pn">Nombre y Apellido (Obligatorio)*</label>
@@ -249,8 +252,8 @@
             </p>
             
                         <div class="file-upload-wrapper">
-                            <label for="file-rec" class="btn-file">Ingresa tu archivo</label>
-                            <input type="file" id="file-rec" name="archivo" accept=".pdf,.jpg,.jpeg,.gif" class="file-input">
+                            <label for="file-pn" class="btn-file">Ingresa tu archivo</label>
+                            <input type="file" id="file-pn" name="archivo" accept=".pdf,.jpg,.jpeg,.gif" class="file-input">
                             <span class="file-name">Sin archivos seleccionados</span>
                          </div>
        
@@ -284,7 +287,8 @@
                         <span class="btn-icon">❯</span>
                         <span>Formulario de Denuncia Persona Jurídica</span>
                     </div>
-                     <form class="custom-form" id="form-persona-juridica">
+                     <form class="custom-form" id="form-persona-juridica" enctype="multipart/form-data">
+                        <input type="hidden" name="tipo_formulario" value="Denuncias">
              <p class="form-disclaimer">
            “Este canal tiene como finalidad atender y gestionar reportes relacionados con malas prácticas que vulneren las normas y disposiciones establecidas por Línea gráfica”
                </p>
@@ -372,8 +376,8 @@
             </p>
             
                         <div class="file-upload-wrapper">
-                            <label for="file-rec" class="btn-file">Ingresa tu archivo</label>
-                            <input type="file" id="file-rec" name="archivo" accept=".pdf,.jpg,.jpeg,.gif" class="file-input">
+                            <label for="file-pj" class="btn-file">Ingresa tu archivo</label>
+                            <input type="file" id="file-pj" name="archivo" accept=".pdf,.jpg,.jpeg,.gif" class="file-input">
                             <span class="file-name">Sin archivos seleccionados</span>
                          </div>
             <!-- 8. Compromiso y Declaración Jurada --> 
@@ -408,7 +412,8 @@
                         <span>Formulario de Denuncia Anónima</span>
                     </div>                    
 
-                    <form class="custom-form" id="form-anonima">
+                    <form class="custom-form" id="form-anonima" enctype="multipart/form-data">
+                        <input type="hidden" name="tipo_formulario" value="DeAnonimas">
                     <p class="form-disclaimer">
                     “Este canal tiene como finalidad atender y gestionar reportes relacionados con malas prácticas que vulneren las normas y disposiciones establecidas por Línea gráfica”
                     </p>
@@ -473,8 +478,8 @@
             </p>
             
                         <div class="file-upload-wrapper">
-                            <label for="file-rec" class="btn-file">Ingresa tu archivo</label>
-                            <input type="file" id="file-rec" name="archivo" accept=".pdf,.jpg,.jpeg,.gif" class="file-input">
+                            <label for="file-anon" class="btn-file">Ingresa tu archivo</label>
+                            <input type="file" id="file-anon" name="archivo" accept=".pdf,.jpg,.jpeg,.gif" class="file-input">
                             <span class="file-name">Sin archivos seleccionados</span>
                          </div>
             <!-- 8. Compromiso y Declaración Jurada --> 
@@ -505,4 +510,23 @@
         <a href="<?php echo Routes::url('inicio'); ?>" class="btn-navegar">Seguir navegando</a>
     </div>
 </section>
+
+<!-- Modal Dinámico Moderno -->
+<div id="custom-modal" class="modal-overlay">
+    <div class="modal-content">
+        <!-- El ícono cambiará dinámicamente -->
+        <div class="modal-icon" id="modal-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+        </div>
+        
+        <h3 class="modal-title" id="modal-title">¿Estás seguro de enviar tu queja?</h3>
+        <p class="modal-message" id="modal-message"></p> <!-- Para errores o mensajes extra -->
+        
+        <div class="modal-actions" id="modal-actions">
+            <!-- Los botones se inyectan desde JavaScript -->
+        </div>
+    </div>
+</div>
+
+<script src="/linea_grafica/public/assets/JS/quejasForm.js"></script>
 
