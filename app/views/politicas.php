@@ -8,7 +8,6 @@
         <a href="<?php echo Routes::pdf('POLITICA DE DERECHOS HUMANOS.pdf'); ?>" 
             target="_blank"
             class="politica-link">
-
         Descargar ahora
         <img 
             src="<?php echo Routes::img('blog/link.png'); ?>" alt="link" 

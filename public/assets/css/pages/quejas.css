@@ -1,0 +1,511 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- TÍTULO PRINCIPAL --- */
+.info-title {
+    width: 100%;
+    background: #BE1119;
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
+    padding: 26px 0;
+    margin-bottom: 24px;
+}
+
+/* --- CONTENEDORES --- */
+.quejas {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.cards-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Made Okine Sans', sans-serif;
+}
+
+.quejas-boton {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-navegar {
+    background: #000;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    font-family: 'Made Okine Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* --- ACORDEÓN PRINCIPAL --- */
+.accordion-item {
+    width: 100%;
+}
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 24px;
+    background-color: #f7f7f7;
+    border: 1.5px solid #be1119;
+    border-radius: 50px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.accordion-header::-webkit-details-marker,
+.sub-header::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
+.btn-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 50%;
+    background-color: #be1119;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.main-accordion[open] > .accordion-header .btn-icon {
+    transform: rotate(90deg);
+}
+
+/* --- SUB-ACORDEONES (Persona Natural, Jurídica, Anónima) --- */
+.sub-accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px 0 10px 0;
+}
+
+.sub-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.sub-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.sub-icon {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.sub-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
+/* --- BANNER ROSADO --- */
+.form-banner {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #fce4e4;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease;
+}
+
+.form-banner:hover {
+    background-color: #f8d0d0;
+}
+
+.form-banner .btn-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    font-size: 16px;
+}
+
+.form-disclaimer {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+    color: #222;
+    margin: 15px 0 25px 0;
+    line-height: 1.4;
+}
+
+/* --- ESTILOS DE FORMULARIO --- */
+.accordion-content {
+    padding: 15px 10px;
+}
+
+.custom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 14px 20px;
+    background-color: #f7f7f7;
+    border: 1.5px solid #be1119;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+}
+
+.select-wrapper {
+    position: relative;
+    width: 220px;
+}
+
+.select-wrapper select {
+    width: 100%;
+    padding: 10px 40px 10px 20px;
+    background-color: #f7f7f7;
+    border: 1.5px solid #be1119;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.select-wrapper::after {
+    content: '❯';
+    transform: rotate(90deg);
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    margin-top: -13px;
+    width: 26px;
+    height: 26px;
+    background-color: #be1119;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 18px;
+    background-color: #f7f7f7;
+    border: 1.5px solid #be1119;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    resize: vertical;
+}
+
+/* ARCHIVOS ADJUNTOS */
+.file-instruction {
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.4;
+    margin: 0 0 8px 0;
+}
+
+.file-upload-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.file-input {
+    display: none;
+}
+
+.btn-file {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: #f7f7f7;
+    border: 1.5px solid #be1119;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-file:hover {
+    background-color: #eaeaea;
+}
+
+.file-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    word-break: break-all;
+}
+
+/* BOTÓN ENVIAR */
+.btn-submit {
+    align-self: flex-start;
+    margin-top: 10px;
+    padding: 10px 35px;
+    background-color: #f7f7f7;
+    border: 1.5px solid #be1119;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #be1119;
+    color: #fff;
+}
+
+/* --- RADIO BUTTONS --- */
+.section-label {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.radio-options-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.custom-radio {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-radio input[type="radio"] {
+    display: none;
+}
+
+.radio-mark {
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    border: 1.5px solid #be1119;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.custom-radio input[type="radio"]:checked + .radio-mark {
+    background-color: #be1119;
+}
+
+.custom-radio input[type="radio"]:checked + .radio-mark::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.radio-label-text {
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+}
+
+/* --- UBICACIÓN --- */
+.location-inputs-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.location-inputs-group input::placeholder {
+    color: #888;
+    font-size: 16px;
+}
+
+/* --- CALENDARIO --- */
+.date-input-wrapper {
+    position: relative;
+    width: fit-content;
+}
+
+.date-input-wrapper input[type="date"] {
+    padding: 10px 18px;
+    background-color: #f7f7f7;
+    border: 1.5px solid #be1119;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: inherit;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+}
+
+.date-input-wrapper input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(13%) sepia(94%) saturate(5412%) hue-rotate(349deg) brightness(84%) contrast(98%);
+}
+
+
+/* ==========================================================
+   MEDIA QUERIES (RESPONSIVE DESIGN)
+   ========================================================== */
+
+/* --- PANTALLAS MEDIANAS Y MOVILES (< 768px) --- */
+@media (max-width: 768px) {
+    .info-title {
+        font-size: 22px;
+        padding: 18px 10px;
+    }
+
+    .quejas {
+        padding: 20px 10px;
+    }
+
+    .accordion-header {
+        padding: 10px 16px;
+        gap: 12px;
+    }
+
+    .accordion-title {
+        font-size: 17px;
+    }
+
+    .btn-icon {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+        font-size: 14px;
+    }
+
+    .sub-title {
+        font-size: 17px;
+    }
+
+    .sub-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .form-banner {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .form-banner .btn-icon {
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        font-size: 13px;
+    }
+
+    .form-group label,
+    .section-label {
+        font-size: 16px;
+    }
+
+    .select-wrapper {
+        width: 100%; /* El dropdown se adapta full width en móvil */
+    }
+}
+
+/* --- MOVILES PEQUEÑOS (< 480px) --- */
+@media (max-width: 480px) {
+    .btn-submit {
+        width: 100%; /* Botón de envío full width */
+        text-align: center;
+    }
+
+    .date-input-wrapper {
+        width: 100%;
+    }
+
+    .date-input-wrapper input[type="date"] {
+        width: 100%;
+    }
+
+    .radio-label-text {
+        font-size: 15px;
+    }
+}
+
+/* --- ESCRITORIO Y PANTALLAS ANCHAS (> 769px) --- */
+@media (min-width: 769px) {
+    /* Muestra Distrito, Provincia y Región en 3 columnas en desktop */
+    .location-inputs-group {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}

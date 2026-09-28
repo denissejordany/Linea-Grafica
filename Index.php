@@ -29,6 +29,12 @@ switch ($route) {
         $controller->showPolicies();
         break;
 
+    case 'quejas':
+        require_once "app/controllers/QuejasController.php";
+        $controller = new QuejasController();
+        $controller->showQuejas();
+        break;
+
     default:
         require_once "app/views/404.php";
         break;
